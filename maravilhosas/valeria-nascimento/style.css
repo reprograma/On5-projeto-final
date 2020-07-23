@@ -1,0 +1,415 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background-color: rgba(8, 8, 8, 0.911);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+ main {
+     text-align: center;
+     justify-content: center;
+ }
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+/* --- BOTAO --- */
+
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+.btn_roxo {
+    color: white;
+    background-color: lightcoral;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    transition: all .5s;
+    margin: 0 auto;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+    transform: translateY(-1rem);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    background-color: rgb(192, 156, 188);
+}
+
+.btn_roxo:active {
+    transform: translateY(-3rem);
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.btn_center {
+    margin: 0 auto;
+}
+
+
+/* --- NAV --- */
+.navegacao {
+  background-color: purple;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  transition: all 1s;
+}
+
+.navegacao__logo {
+
+    width: 220px;
+    height: auto;
+    margin: 50px 5px 0px 15px;
+}
+
+.navegacao__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacao__itens {
+  transition: all 1s;
+  position: absolute;
+  right: -800px;
+  top: 85px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.navegacao__itens.ativo {
+  display: block;
+  right: 0;
+  top: 85px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  transition: right 0.5s;
+}
+
+.navegacao__itens li > a {
+  transition: all 0.5s;
+}
+
+.navegacao__itens li > a:hover {
+  color: lightgray;
+}
+
+.navegacao__menu-hamburguer img {
+  border-radius: 5px;
+}
+
+.navegacao__nav {
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+.navegacao__nav li {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.navegacao__redes-sociais a {
+  margin: 0 1rem;
+}
+header{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 2.6rem;
+    text-transform: uppercase
+}
+.header{
+    background-image: url(../valeria-nascimento/img/menu-nav.png);
+    width: auto;
+    background-repeat: repeat;
+}
+.quem{
+    text-align: center;
+    text-justify: auto;
+    text-decoration: solid;
+    text-shadow: whitesmoke;
+    color: gray;
+    font-size: x-large;
+}
+.parte1 {
+    color: lightgray;
+    width: auto;
+    padding: 3rem 0;
+    border: 10px solid #63458a ;
+    margin: 10px;
+    text-emphasis-color: grey;
+    box-sizing: content-box;
+    display: flex;
+}
+
+.parte2 {
+    color: lightgray;
+    width: auto;
+    padding: 3rem 0;
+    border: 10px solid #63458a ;
+    margin: 10px;
+    text-emphasis-color: grey;
+    box-sizing: content-box;
+    display: flex;
+}
+
+.parte3 {
+    color: lightgray;
+    width: auto;
+    padding: 3rem 0;
+    border: 10px solid #63458a ;
+    margin: 10px;
+    text-emphasis-color: grey;
+    box-sizing: content-box;
+    display: flex;
+
+}
+.parte4 {
+    color: lightgray;
+    width: auto;
+    padding: 3rem 0;
+    border: 10px solid #63458a ;
+    margin: 10px;
+    text-emphasis-color: grey;
+    box-sizing: content-box;
+    display: flex;
+
+}
+.parte5 {
+    color: lightgray;
+    width: auto;
+    padding: 3rem 0;
+    border: 10px solid #63458a ;
+    margin: 10px;
+    text-emphasis-color: grey;
+    box-sizing: content-box;
+    display: flex;
+}
+
+/* --- SECTION MARAVILHOSAS --- */
+.maravilhosas__titulo {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #63458a;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.maravilhosas__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: #63458a;
+}
+
+.maravilhosas__perfil {
+    max-width: 120px;
+    margin: 2rem;
+}
+
+.maravilhosas__perfil img {
+    background-color: #63458a;
+    border-radius: 10px;
+}
+
+.maravilhosas__perfil a img {
+    transition: all .5s;
+}
+
+
+.maravilhosas__perfil a:hover {
+    text-decoration: underline;
+}
+
+.maravilhosas__perfil a:hover img {
+    box-shadow: 0 3px 10px rgba(0,0,0,.2);
+}
+/* --- secao-diva__citacao title2 --- */
+#frase{
+    background-color: lavender;
+    color: black;
+}
+.citacao {
+    text-align: center;
+    text-transform: capitalize;
+    border-style: solid;
+    border-color: #63458a;
+    font-size: medium;
+}
+#livrosNeusa{
+    background-color: lavender;
+    color: black;
+}
+.entrevistaTitulo{
+    color: grey;
+    border-style: outset;
+    letter-spacing: 3px;
+    font-size: x-large;
+}
+.programaEspelho{
+    color: grey;
+    text-shadow: honeydew;
+}
+
+#depoimento{
+background-color: blanchedalmond;
+border-style: solid;
+width: auto;
+padding: 3rem 0;
+border: 10px solid #63458a ;
+margin: 10px;
+
+}
+.secao-cta{
+    color: lightgray;
+  font-size: medium;
+  background-color: #e7e7e7;
+  
+}
+/* --- FOOTER --- */
+.rodape {
+    background-color: #323534;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .8rem;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+    margin: 1rem 0;
+}
+
+.rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.rodape__navegacao a {
+    transition: all .5s;
+}
+
+.rodape__navegacao a:hover {
+    color:whitesmoke;
+}
+
+.rodape__logo {
+    max-width: 200px;
+    
+}
+
+.rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.rodape__redes-sociais a:hover {
+    color: grey;
+}
+
+.rodape__redes-sociais img {
+    max-width: 10px;
+    margin-right: .5rem;
+}
+
+.rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: none;
+    color:whitesmoke;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+}
+
+/** ---- PERSONALIDADE ---- **/
+/* --- HEADER --- */
+
+
+
+
+/* RESPONSIVO*/
+
+@media (min-width: 768px) {
+    /* --- NAV --- */
+    .navegacao__itens {
+      position: static;
+      display: flex;
+      padding: 0;
+      width: auto;
+    }
+  
+    .navegacao__nav {
+      margin-bottom: 0;
+    }
+  
+    .navegacao__itens ul {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .navegacao__itens li {
+      font-size: 1.2rem;
+      margin: 0 0.6rem;
+    }
+  
+    .navegacao__menu-hamburguer {
+      display: none;
+    }
+}
+/* rodapé logo responsivo*/
+@media (min-width: 768px){
+    .img-responsive {
+        size: auto;
+    
+    }
+}

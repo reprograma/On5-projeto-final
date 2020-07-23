@@ -1,0 +1,105 @@
+  <section class="banner">
+        <div class="nomedela" style="background-image: url('#');">
+
+            <p>“Uma das formas de exercer autonomia é possuir um discurso sobre si mesmo.”(SOUZA, 1983, p. 17).</p>
+
+        </div>
+    </section>
+
+    <section class="sobreneusa">
+        <div class="bibliografia">
+            <h1>Quem é Neusa?</h1>
+            <p> Neusa Santos Souza (Cachoeira, 1948 - Rio de Janeiro, 20 de dezembro de 2008) foi uma psiquiatra,
+                psicanalista e escritora brasileira. Sua obra é referência sobre os aspectos sociológicos e
+                psicanalíticos da negritude, inaugurando o debate contemporâneo e analítico sobre o racismo no Brasil.
+            </p>
+            <i class="fas fa-angle-double-down"></i>
+            <p>
+                Nascida em Cachoeira, Bahia, formou-se em medicina pela Universidade Federal da Bahia e tornou-se
+                psiquiatra e psicanalista de orientação lacaniana. Estabeleceu-se no Rio de Janeiro onde adquiriu o
+                título de Mestre em Psiquiatria pela Universidade Federal do Rio de Janeiro, conviveu com intelectuais e
+                deu importante contribuição na luta contra a discriminação racial.
+            </p>
+            <i class="fas fa-angle-double-down"></i>
+            <p>
+                Sua dissertação de mestrado deu origem à obra Tornar-se negro: as vicissitudes da identidade do negro
+                brasileiro em ascensão social, considerado um marco da psicologia preta no Brasil. Contribuiu também com
+                artigos sobre a psicose e a psicanálise lacaniana.
+            </p>
+            <i class="fas fa-angle-double-down"></i>
+            <p>
+                Apoiada em sua própria experiência e em sua formação psicanalítica ela procura interpretar quais são as
+                trajetórias pessoais, os pressupostos e os desdobramentos desse difícil processo de ascensão social do
+                negro numa sociedade branca.
+            </p>
+            <i class="fas fa-angle-double-down"></i>
+            <p>
+                A produção acadêmica de Neusa Santos é referência para o pensamento da psicologia brasileira sobre
+                relações étnico-raciais, sobre o processo de "branqueamento" e o sofrimento psíquico dos negros na
+                sociedade brasileira. Seu nome é homenageado no Rio de Janeiro, com o Centro de Atenção Psicossocial
+                (CAPS) II Neusa Santos Souza.
+            </p>
+        </div>
+        <div class="card" style="background-image: url('#');">
+            <!-- colocar foto dos livros-->
+            <img src="#" alt="Avatar" style="width:100%">
+            <div class=" flex-item containerUm">
+                <h4><b>Tornar-se Negro</b></h4>
+                <button type="button" class="collapsible livroUm">Saiba mais...</button>
+                <div class="contentLivroUm">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="#" alt="Avatar" style="width:100%">
+            <div class="flex-item containerUm">
+                <h4><b>A Psicose</b></h4>
+                <button type="button" class="collapsible livroDois">Saiba mais...</button>
+                <div class="contentLivroDois">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="#" alt="Avatar" style="width:100%">
+            <div class="flex-item containerTres">
+                <h4><b>A Psicose</b></h4>
+                <button type="button" class="collapsible livroTres">Saiba mais...</button>
+                <div class="contentLivroTres">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="entrevista" style="background-image: url('#');">
+            <h1>Entrevista Exclusiva</h1>
+            <h2>Neusa Santos Sousa no programa Espelho</h2>
+            <video width="400" controls>
+                <source src="https://www.youtube.com/watch?v=eugWGvhG48o" type="videoutube">
+            </video>
+            <p>
+                Assista aqui também a
+                <a href="https://www.youtube.com/watch?v=eugWGvhG48o" target="_blank">entrevista.</a>.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h1>Meu depoimento</h1>
+            <p>A leitura do livro "Tornar-se Negro" da Neusa foi um divisor de aguas em minha vida. Eu estava em
+                transição capilar( deixando de
+                alisar e manter o cabelo natural), e busquei entender a não aceitação do cabelo crespo e tudo
+                mais. Com Neusa, eu pude compreender todas as questões de branqueamento, o lugar da mulher negra e o
+                eterno enigma da vida de quem é "branco demais para ser negro, negro demais para ser branco". Recomendo
+                a leitura para fortalecer nosso processo de identificação ancestral e também para compreender o aspecto
+                psiquico dos efeitos do racismo </p>
+        </div>
+    </section>
