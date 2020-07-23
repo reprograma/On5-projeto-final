@@ -29,9 +29,10 @@
   document.addEventListener("mouseout", showFunction);
 
   function hideFunction() {
-    document.getElementById("imgUm").style.visibility = "hidden";
+    document.getElementById("imgOnnamusha").style.visibility = "hidden";
   };
 
   function showFunction() {
-    document.getElementById("imgUm").style.visibility = "visible";
+    document.getElementById("imgOnnamusha").style.visibility = "visible";
   };
+

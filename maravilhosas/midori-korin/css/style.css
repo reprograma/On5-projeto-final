@@ -147,7 +147,7 @@ max-width: % ou px
     text-shadow: 0px 5px 15px black;
   }
 
-/*infos*/
+/*MARAVILHOSA*/
   .maravilhosas-container{
     padding-top: 5rem;
     padding-bottom: 8rem;
@@ -159,7 +159,7 @@ max-width: % ou px
     font-weight: bold;
   }
 
-  .onnabusha p{
+  .onnamusha p{
     background-color: white;
     color: #63458a;
     padding-right: 5rem;
@@ -172,7 +172,7 @@ max-width: % ou px
     text-align: justify;
   }
 
-  .img-onnabusha{
+  .img-onnamusha{
     width: 100%; 
     position: relative;
     top: -15rem;
@@ -180,46 +180,73 @@ max-width: % ou px
     padding-left: 5rem;
   }
 
-  /* --- SECTION MARAVILHOSAS --- 
-  .maravilhosas__titulo {
-    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  .shogunato p{
+    background-color: white;
+    color: #63458a;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: justify;
+  }
+
+  .img-shogunato{
+    width: 100%; 
+    position: relative;
+    top: -15rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  .culturapop p{
+    background-color: white;
+    color: #63458a;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: justify;
+  }
+
+  .img-culturapop{
+    width: 100%; 
+    position: relative;
+    top: -15rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  
+  /*FONTES*/
+  .fontes{
     color: #63458a;
     font-size: 2rem;
     text-align: center;
+    padding-bottom: 10rem;
   }
-  
-  .maravilhosas__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
+  .fontes-titulo{
+    color:#323534;
+    font-weight: bold;
+  }
+
+
+  /*SOBRE MIM*/
+  .sobre-mim{
     color: #63458a;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 10rem;
   }
-  
-  .maravilhosas__perfil {
-    max-width: 120px;
-    margin: 2rem;
+  .titulo-sobremim{
+    color:#323534;
+    font-weight: bold;
   }
-  
-  .maravilhosas__perfil img {
-    background-color: #63458a;
-    border-radius: 10px;
-    min-height: 125px;
-    object-fit: cover;
-  }
-  
-  .maravilhosas__perfil a img {
-    transition: all 0.5s;
-  }
-  
-  .maravilhosas__perfil a:hover {
-    text-decoration: underline;
-  }
-  
-  .maravilhosas__perfil a:hover img {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  }  */
-  
+
   /* --- FOOTER --- */
   .rodape {
     background-color: #323534;
