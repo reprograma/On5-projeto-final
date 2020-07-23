@@ -13,7 +13,7 @@ max-width: % ou px
 }
 
 html {
-  font-size: 10px; /* definir uma font-size padrão */
+  font-size: 0.625rem; /* definir uma font-size padrão */
 }
 
 
@@ -21,6 +21,8 @@ body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   margin: 0;
 }
+
+/* --- Barra de rolagem personalizado --- */
 
 ::-webkit-scrollbar {
   width: 2rem;
@@ -60,7 +62,7 @@ li {
 /* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
   width: 100%;
-  box-shadow: 0 0 15px yellowgreen;
+  
 }
 
 /* define o tamanho da caixa */
@@ -108,7 +110,7 @@ li {
 
 /* --- NAV --- */
 .navegacao {
-  background-color: transparent;
+  background-color:#6745826b;
   color: white;
   text-transform: uppercase;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
@@ -154,7 +156,7 @@ li {
 }
 
 .navegacao__itens li > a:hover {
-  color: yellowgreen;
+  color: #c083b9;
 }
 
 .navegacao__menu-hamburguer img {
@@ -178,7 +180,7 @@ li {
 /* --- HEADER --- */
 .header {
   min-height: 70vh;
-  height: 380px;
+  height: 480px;
   background: linear-gradient(
       to top,
       rgba(3, 3, 3, 0.781) 0,
@@ -202,14 +204,14 @@ li {
   font-size: 2.5rem;
   font-weight: 900;
   text-shadow: 0px 5px 15px black;
-  color: yellowgreen;
+  
 }
 /* --CARROSSEL--*/
 
 .slideshow-container {
   width: 70%;
   position: relative;
-  margin-left: 8rem;
+  margin-left: 2rem;
 }
 
 .mySlides {
@@ -256,7 +258,7 @@ li {
   font-weight: bolder;
 }
 
-/* Number text (1/3) */
+/* Numeros do texto */
 .numbertext {
   color: #740ac7;
   font-size: 12px;
@@ -282,8 +284,8 @@ li {
   background-color: #740ac7;
 }
 
-/* Fading animation */
-/* Key Frames */
+/* animaçoes */
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -375,7 +377,7 @@ h3 {
 }
 
 .rodape__navegacao a:hover {
-  color: yellowgreen;
+  color: #c083b9;
 }
 
 .rodape__logo {
@@ -390,7 +392,7 @@ h3 {
 }
 
 .rodape__redes-sociais a:hover {
-  color: yellowgreen;
+  color: #c083b9;
 }
 
 .rodape__redes-sociais img {
@@ -492,7 +494,7 @@ h3 {
 .secao-cta__btn {
   padding: 10px 25px;
   border-radius: 5px;
-  background-color: yellowgreen;
+  background-color: #674582;
   color: white;
   font-size: 20px;
   cursor: pointer;
@@ -504,8 +506,9 @@ h3 {
   border-bottom: 10px solid transparent;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid yellowgreen;
+  border-top: 10px solid #674582;
   transition: all 0.5s;
+  margin-left: 6rem;
 }
 
 .arrow-close {
@@ -513,7 +516,7 @@ h3 {
   transition: all 0.5s;
   width: 0;
   height: 0;
-  border-bottom: 10px solid yellowgreen;
+  border-bottom: 10px solid #674582;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid transparent;
@@ -526,6 +529,7 @@ h3 {
 
 .secao-autora__dados {
   color: #63458a;
+  padding-left: 7rem;
 }
 
 .secao-autora__dados p {
@@ -543,7 +547,7 @@ h3 {
   text-decoration: underline;
 }
 .secao-autora__about {
-  background-color: #740ac7;
+  background-color: #674582;
   color: rgb(245, 105, 245);
   border-radius: 5px;
   display: flex;
@@ -578,20 +582,23 @@ h3 {
 
 .secao-cta {
   text-align: right;
-  padding: 4rem 4rem;
+  padding: 4rem 3rem;
+  margin-left: 9rem;
 }
 
 .secao-autora__btn {
-  padding: 10px 25px;
+  padding: 5px 12px;
   border-radius: 5px;
-  background-color: yellowgreen;
+  background-color: #63458a;
   color: white;
-  font-size: 20px;
+  font-size: 1rem;
+  position: absolute;
+  margin-left: 5rem;
 }
 
 .secao-autora__btn:hover {
   opacity: 0.8;
-  color: #034922;
+  color: #c083b9;
 }
 
 /*** MEDIA QUERIES ***/
@@ -637,6 +644,18 @@ h3 {
     font-size: 2.9rem;
   }
 
+  /* --- AUTORA --- */
+  .secao-autora__dados {
+    padding-left: 5rem;
+  }
+
+  .arrow{
+    margin-left: 6.5rem;
+  }
+  .secao-autora__btn {
+    font-size: 1.3rem;
+    margin-left: 23rem;
+  }
   /* --- FOOTER --- */
   .rodape {
     padding-top: 0;
@@ -686,7 +705,14 @@ h3 {
     padding: 0;
   }
   .secao-autora__dados {
-    margin: 0 3rem;
+    margin-left: 2rem;
+  }
+  .arrow{
+    margin-left: 8.5rem;
+  }
+  .secao-autora__btn {
+    font-size: 2rem;
+    margin-left: 30rem;
   }
   /* --- CARROSSEL --- */
   .slideshow-container {
@@ -712,5 +738,9 @@ h3 {
   /* --- CARROSSEL --- */
   .slideshow-container {
     margin-left: 20rem;
+  }
+  .secao-autora__btn {
+    font-size: 2rem;
+    margin-left: 60rem;
   }
 }
