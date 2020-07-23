@@ -13,7 +13,7 @@ max-width: % ou px
   }
   
   html {
-    font-size: 5px; /* definir uma font-size padrão */
+    font-size: 10px; /* definir uma font-size padrão */
   }
   
   body {
@@ -33,7 +33,7 @@ max-width: % ou px
   li {
     list-style: none;
   }
-  
+
   /* define que as imagens tem que ter o tamanho máximo da div mãe */
   .img-responsive {
     width: 100%;
@@ -147,7 +147,40 @@ max-width: % ou px
     text-shadow: 0px 5px 15px black;
   }
 
-  /* --- SECTION MARAVILHOSAS --- */
+/*infos*/
+  .maravilhosas-container{
+    padding-top: 5rem;
+    padding-bottom: 8rem;
+  }
+
+  .maravilhosas__titulo{
+    text-align: center;
+    color: #63458a;
+    font-weight: bold;
+  }
+
+  .onnabusha p{
+    background-color: white;
+    color: #63458a;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 5rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: justify;
+  }
+
+  .img-onnabusha{
+    width: 100%; 
+    position: relative;
+    top: -15rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+
+  /* --- SECTION MARAVILHOSAS --- 
   .maravilhosas__titulo {
     font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
     color: #63458a;
@@ -185,7 +218,7 @@ max-width: % ou px
   
   .maravilhosas__perfil a:hover img {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  }
+  }  */
   
   /* --- FOOTER --- */
   .rodape {
