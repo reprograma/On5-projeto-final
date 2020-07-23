@@ -50,6 +50,10 @@ h4 {
   color: #C083B9;
 }
 
+.imagem-meio {
+  border-radius: 50%;
+}
+
 .sobre-mim {
   text-align: center;
 }
@@ -343,12 +347,12 @@ body {
   min-height: 70vh;
   height: 480px;
   background: #7E459B;
-  background-image: url(./img/IMG_2145.JPG);
+  background-image: url(./img/IMG_2145.JPG) ;
+  background-size: cover;
   background-blend-mode: soft-light;
   text-align: center;
   padding-top: 0rem;
   color: white;
-  background-size: cover;
   background-position-y: 60%;
   background-repeat: no-repeat;
   display: flex;
