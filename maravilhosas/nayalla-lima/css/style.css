@@ -224,12 +224,12 @@ li {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -1.375rem;
   padding: 1rem;
   color: #550294;
   background-color: #c787f8;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -247,8 +247,8 @@ li {
 
 .text {
   color: #740ac7;
-  font-size: 15px;
-  padding: 2px;
+  font-size: 0.94rem;
+  padding: 0.125rem;
   bottom: 8px;
   width: 100%;
   text-align: center;
@@ -261,8 +261,8 @@ li {
 /* Numeros do texto */
 .numbertext {
   color: #740ac7;
-  font-size: 12px;
-  padding: 8px 12px;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
   position: absolute;
   top: 0;
 }
@@ -272,7 +272,7 @@ li {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 0.125rem;
   background-color: #c787f8;
   border-radius: 50%;
   display: inline-block;
@@ -492,11 +492,11 @@ h3 {
   border-radius: 5px;
 }
 .secao-cta__btn {
-  padding: 10px 25px;
+  padding: 0.625rem 1.5625rem;
   border-radius: 5px;
   background-color: #674582;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   cursor: pointer;
 }
 .arrow {
@@ -533,13 +533,13 @@ h3 {
 }
 
 .secao-autora__dados p {
-  margin: 15px;
+  margin: 0.94rem;
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .secao-autora__dados span {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .secao-autora a {
@@ -557,13 +557,13 @@ h3 {
   border-radius: 8px;
   width: 75px;
   height: 110px;
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 .secao-autora__about p {
   line-height: 23px;
-  font-size: 15px;
-  margin-right: 10px;
+  font-size: 0.94rem;
+  margin-right: 0.625rem;
 }
 
 .closed {
@@ -587,7 +587,7 @@ h3 {
 }
 
 .secao-autora__btn {
-  padding: 5px 12px;
+  padding: 0.3125rem 0.75rem;
   border-radius: 5px;
   background-color: #63458a;
   color: white;
