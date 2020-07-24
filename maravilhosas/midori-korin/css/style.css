@@ -159,6 +159,14 @@ max-width: % ou px
     font-weight: bold;
   }
 
+  .btn-saibamais{
+    display: center;
+    font-weight: bold;
+    align-items: center;
+    color: #7E459B;
+    background-color: white;
+  }
+
   .onnamusha p{
     background-color: white;
     color: #63458a;
@@ -222,6 +230,8 @@ max-width: % ou px
     padding-left: 5rem;
   }
   
+  
+
   /*FONTES*/
   .fontes{
     color: #63458a;

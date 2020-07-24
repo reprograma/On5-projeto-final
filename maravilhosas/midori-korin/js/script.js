@@ -25,14 +25,30 @@
     }
   });
   
-  document.addEventListener("mouseover", hideFunction);
-  document.addEventListener("mouseout", showFunction);
+  function myFunctionOnna() {
+    var x = document.getElementById("imgOnnamusha");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
-  function hideFunction() {
-    document.getElementById("imgOnnamusha").style.visibility = "hidden";
-  };
+  function myFunctionShogunato() {
+    var x = document.getElementById("imgShogunato");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
 
-  function showFunction() {
-    document.getElementById("imgOnnamusha").style.visibility = "visible";
-  };
-
+  function myFunctionCulturapop() {
+    var x = document.getElementById("imgCulturapop");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  
