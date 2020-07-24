@@ -178,6 +178,7 @@ max-width: % ou px
     font-size: 2.5rem;
     font-weight: 900;
     text-shadow: 0px 5px 15px black;
+    margin: 5rem;
   }
   
   .principal__sub {
@@ -195,6 +196,46 @@ max-width: % ou px
 
   .imagem-carrossel {
       border-radius: 50%;
+  }
+
+  /* --- SECTION MARAVILHOSAS --- */
+.maravilhosas__titulo {
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    color: #63458a;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .maravilhosas__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: #63458a;
+  }
+  
+  .maravilhosas__perfil {
+    max-width: 120px;
+    margin: 2rem;
+  }
+  
+  .maravilhosas__perfil img {
+    background-color: #63458a;
+    border-radius: 10px;
+    min-height: 125px;
+    object-fit: cover;
+  }
+  
+  .maravilhosas__perfil a img {
+    transition: all 0.5s;
+  }
+  
+  .maravilhosas__perfil a:hover {
+    text-decoration: underline;
+  }
+  
+  .maravilhosas__perfil a:hover img {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   }
   
   /* --- FOOTER --- */
@@ -267,6 +308,64 @@ max-width: % ou px
     text-align: center;
   }
   
+  /* --- PEFIL DIVA--- */
+.secao-diva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+  }
+  
+  .secao-diva__titulo {
+    text-align: center;
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #674582;
+  }
+  
+  .secao-diva__titulo_esq {
+    margin-right: auto;
+  }
+  
+  .secao-diva p {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+  .secao-diva__introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .secao-diva__foto-perfil {
+    max-width: 18rem;
+    margin: 1rem;
+  }
+  
+  .secao-diva__citacao p {
+    transition: all 0.5s;
+    font-weight: bold;
+    border: 1px solid #63458a;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+  }
+  
+  .secao-diva__citacao p:hover {
+    transform: scale(1.1);
+  }
+  
+  .secao-diva__historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+  }
+
   /* --- AUTORA --- */
   .secao-autora {
     display: flex;
