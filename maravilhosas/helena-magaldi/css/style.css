@@ -7,73 +7,255 @@ font-size: rem
 width: %
 max-width: % ou px
 */
-.paragrafo {
-  text-align: justify;
-}
 
-/* .foto-autora {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-} */
-
-figure{
-  display:block;
-  width:50px;
-  height: 50px;
-  border-radius: 50px;
-  font-size: 25px;
-  text-align: center;
-  margin-right: 10px;
-  background: #fff;
-  line-height: 1.7em;
-}
-
-figure img{
- display:inline-block;
- width: 30px;
- height: auto;
-}
-
-
-
-
-.cent {
-    display: inline-block;
-    background-color: #7b38d8;
-    border-radius: 10px;
-    border: 4px double #cccccc;
-    color: #eeeeee;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-
-}
-
-
-* {
-  box-sizing: border-box;
+.phell {
+  font-size: 10px;
 }
 
 html {
-  font-size: 10px; /* definir uma font-size padrão */
+  font-size: 10px;
 }
+
+.img-circle {
+  border-radius: 50%;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+.p1 {
+  margin: 2rem;
+  font-size: 20px;
+}
+
+#content {
+  background-color: #542e85a2;
+  font-size: 2rem;
+  color: black;
+}
+
+
+.h5 {
+  font-size: 4rem;
+}
+
+.outros {
+  align-content: center;
+  text-align: right;
+  padding: 2rem;
+}
+
+.media-video {
+  margin: 0.8rem;
+  display: block;
+}
+
+.main {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.flip-card-back p,a {
+  font-size: 1.5rem;
+  align-content: center;
+  padding: 0.5rem;
+}
+
+.card-header {
+    padding: -0.25rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  justify-content: space-between;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.listaRef{
+  display:inline-block;
+  border:1px solid #000;
+  padding:3px;
+}
+
+
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(117, 75, 141, 0.534);;
+  color: black;
+  transform: rotateY(180deg);
+  font-size: 2rem;
+}
+
+.cardh1 {
+  font-size: 7vw;
+}
+
+/*
+#e27d60
+#O85DCB
+#E8A87C
+#C38D93
+#41B3A3
+#badbe2
+#a8ced7
+#e4d0d3
+#e1d8d9
+#504f4f
+#215b53
+ */
+
+.dna {
+  width: 30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.lala {
+  padding-top: 1rem;
+}
+
+.paragraph2 {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 4rem;
+  text-align: justify;
+  font-style: italic;
+}
+
+.paragraph1 {
+  text-align: justify;
+
+}
+
+.media {
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 2rem;
+  /* justify-content: center; */
+  display: block;
+  justify-content: center;
+
+}
+
+.introducao {
+  padding: 0;
+  padding-left: 0;
+  justify-content: center;
+  display: block;
+}
+
+.button2 {
+   justify-items: center;
+}
+
+.picture1 {
+  width: 25%;
+}
+
+.pictures {
+  justify-content: center;
+}
+
+/*
+#e27d60
+#O85DCB
+#E8A87C
+#C38D93
+#41B3A3
+#badbe2
+#a8ced7
+#e4d0d3
+#e1d8d9
+#47bfaf*/
+
+
+/* conteudo original do meu botao, a ser modificado depois para parecer algo  */
+.btncent {
+  background-color: #63458a;
+  border: none;
+  color: white;
+  padding: 2px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  margin: 0;
+  margin: 0.5rem;
+  background-color: #bdbaba7b;
+  text-align: center;
+  font-size: 15px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.flip-card {
+  align-self: center;
+}
+
+#videos {
+  /* margin-top: 0rem; */
+  border: 50px solid #3c2954;
 }
 
 ul {
@@ -84,39 +266,64 @@ li {
   list-style: none;
 }
 
-.video1 {
-  /* display: in-line; */
-  width: 10%;
-}
-
-.video2 {
-  display: flex;
-  flex-direction: column;
-}
-
-
 /* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  width: 85%;
 }
 
 /* define o tamanho da caixa */
 .container {
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
-  max-width: 960px;
+  /* max-width: 960px; */
 }
 
 /* --- BOTAO --- */
 
+
+.btn2 {
+        display: inline-block;
+        background-color: #582e8f;
+        border-radius: 60px;
+        border: 7px double #cccccc;
+        color: #adadad;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        /* width: 200px; */
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 25px;
+        opacity: 70%;
+}
+
+.maisSobre {
+  margin-bottom: 10vw;
+}
+
+.flip-card {
+  margin: 2vw;
+}
+
+.btn3 {
+  background-color: transparent;
+  text-decoration: underline;
+  color: gainsboro
+}
+
 .btn {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 1rem 3rem;
-  border-radius: 5px;
-  font-size: 1.8rem;
+  display: inline-block;
+        background-color: #272c74;
+        border-radius: 5px;
+        border: 13px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 13px;
+        /* padding: 20px; */
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        /* margin: 25px; */
 }
 
 .btn_roxo {
@@ -146,6 +353,8 @@ li {
 }
 
 /* --- NAV --- */
+/* 42357a6b */
+
 .navegacao {
   background-color: #6745826b;
   color: white;
@@ -154,8 +363,8 @@ li {
   padding: 1.5rem;
   z-index: 99;
   position: fixed;
-  width: 100%;
-  transition: all 1s;
+  width: 99%;
+  transition: all 3s;
 }
 
 .navegacao__logo {
@@ -215,6 +424,7 @@ li {
 }
 
 /* --- HEADER --- */
+
 .header {
   min-height: 70vh;
   height: 480px;
@@ -224,7 +434,7 @@ li {
       rgba(196, 61, 223, 0.418) 50%,
       black 100%
     ),
-    url(../img/reprograma3.jpeg);
+    url(../img/dna.png);
   background-size: cover;
   filter: contrast(100%);
   background-position-y: center;
@@ -244,12 +454,12 @@ li {
   text-shadow: 0px 5px 15px black;
 }
 
-.principal__sub {
+/* .principal__sub {
   font-weight: 300;
   margin: 2rem 0 3rem 0;
   font-size: 1.8rem;
   text-shadow: 0px 0px 15px black;
-}
+} */
 
 /* --- SECTION MARAVILHOSAS --- */
 .maravilhosas__titulo {
@@ -385,7 +595,7 @@ li {
 .secao-diva p {
   color: #63458a;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 0.5;
 }
 
 .secao-diva__introducao {
@@ -423,7 +633,7 @@ li {
 .secao-autora {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -473,16 +683,16 @@ li {
   font-size: 20px;
 }
 
-.secao-autora__dados span {
-  font-size: 28px;
-}
+/* .secao-autora__dados span {
+  font-size: 5px;
+} */
 
 .secao-autora a {
   font-style: italic;
   text-decoration: underline;
 }
 .secao-autora__about {
-  background-color: rgb(8, 5, 8);
+  background-color: rgb(248, 205, 248);
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -529,17 +739,34 @@ li {
 /* TABLET */
 @media (min-width: 768px) {
   /* --- NAV --- */
+
+  p {
+    font-size: 20px;
+  }
+
+  .p1 {
+    font-size: 20px;
+
+  }
+
+  .paragraph2 {
+    font-size: 15px;
+  }
+
+  body {
+    font-size: 20px;
+
+  }
+
+  .media-video {
+    max-width: 100%;
+  }
+
   .navegacao__itens {
     position: static;
     display: flex;
     padding: 0;
     width: auto;
-  }
-
-  .videos2 {
-    display: block;
-    flex-direction: row;
-
   }
 
   .navegacao__nav {
@@ -568,7 +795,7 @@ li {
     min-height: 75vh;
     background-size: cover;
     background-position-y: 0;
-    text-align: left;
+    /* text-align: left; */
     padding: 5rem 10rem;
   }
 
@@ -623,7 +850,29 @@ li {
   }
 }
 
+/* .media {
+  padding: 2rem;
+  margin: 2rem;
+  margin-bottom: 2rem;
+  /* justify-content: center; */
+  /* display: flex;
+  justify-content: center;
+
+} */
+
+
 @media (min-width: 1024px) {
+
+  .paragraph2 {
+    display: flex;
+    font-size: 20px;
+  }
+
+
+  body {
+    font-size: 20px;
+  }
+
   .principal {
     max-width: 650px;
   }
@@ -655,8 +904,25 @@ li {
   }
 }
 
+/* .media {
+  padding: 2rem;
+  /* justify-content: center; */
+  /* display: flex; */
+
+  .media-video {
+    margin: 0.8rem;
+    display: block;
+    text-align: center;
+    align-content: center;
+  }
+
 /* DESKTOP */
 @media (min-width: 1440px) {
+
+  body {
+    font-size: 28px;
+  }
+
   .navegacao__box {
     max-width: 80%;
   }
@@ -671,4 +937,7 @@ li {
   .principal {
     max-width: 650px;
   }
+
+
+
 }
