@@ -462,6 +462,15 @@ li {
 .secao-cta__btn:hover {
   opacity: 0.8;
 }
+
+.jenny-lawson{
+  opacity: 1;
+}
+
+.jenny-lawson:hover{
+  opacity: 0.5;
+  }
+
 /*** MEDIA QUERIES ***/
 /* TABLET */
 @media (min-width: 768px) {
