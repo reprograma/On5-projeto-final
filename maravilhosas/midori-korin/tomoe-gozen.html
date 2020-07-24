@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tomoe Gozen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navegacao">
+    <div class="navegacao__box container">
+      <a class="navegacao__logo" href="index.html">
+        <img class="img-responsive" src="img/logo-white.png" alt="Logo M de Maravilhosa" />
+      </a>
+      <div class="navegacao__itens" id="menuResponsivo">
+        <div class="navegacao__nav">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navegacao__redes-sociais">
+          <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+            <img src="img/icon-facebook.png" alt="Ícone do Facebook" />
+          </a>
+          <a href="https://twitter.com/ReprogramaBr" target="_blank">
+            <img src="img/icon-twitter.png" alt="Ícone do Twitter" />
+          </a>
+          <a href="https://www.instagram.com/reprogramabr/" target="_blank">
+            <img src="img/icon-instagram.png" alt="Ícone do Instagram" />
+          </a>
+          <a href="https://www.linkedin.com/company/reprogramabr/" target="_blank">
+            <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn" />
+          </a>
+        </div>
+      </div>
+      <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+        <a href="#">
+          <img src="img/menu-nav.png" alt="Menu de navegação" />
+        </a>
+      </div>
+    </div>
+  </nav>
+  <header class="header">
+    <div class="container">
+      <div class="principal">
+        <h1 class="principal__titulo">
+          Tomoe Gozen
+        </h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="maravilhosas-container" id="mulheres-maravilhosas">
+      <h3 class="maravilhosas__titulo">
+        Tomoe Gozen: Onna Musha
+      </h3>
+    </div>
+
+    <section>
+      <div class="onnamusha">
+        <p>Onna-Musha: uma mulher samurai treinada em artes marciais e armas para defender sua casa e sua família.
+          Diferente das Onna-bugueisha (especializadas em defesa), Tomoe fazia parte da linha de frente e da
+          força ofensiva na batalha.</p>
+        <img src="./img/onna-musha.jpg" alt="Tomoe Gozen representada em um pergaminho durante uma batalha"
+          class="img-onnamusha" id="imgOnnamusha">
+      </div>
+      <div class="btn btn-saibamais" id="btn-onnamusha">
+        <button onclick="myFunctionOnna()">Saiba mais</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="shogunato">
+        <p>Tomoe lutou na Guerra de Guenpei (de 1180 a 1185) que marcou o fim da era Heian (794-1185) e o início da era
+          dos Samurais. Depois de duras e sangrentas batalhas em que Tomoe se estabeleceu como Líder Comandante (ippo no
+          taisho) graças à sua coragem como guerreira, habilidades com arco e flecha e espada, o seu clã, Minamoto,
+          venceu o clã rival (Taira) e iniciou o primeiro Shogunato.</p>
+        <img src="./img/shogunato.jpg" alt="Tomoe Gozen spbre cavalo" class="img-shogunato" id="imgShogunato">
+      </div>
+      <div class="btn btn-saibamais" id="btn-shogunato">
+        <button onclick="myFunctionShogunato()">Saiba mais</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="culturapop">
+        <p>Cultura Pop: Além de inspiração para literatura, jogos, quadrinhos e filmes, acontece todos os anos, em
+          Kyoto, o "Festival das Eras" (Jidai Matsuri) do qual faz parte um "desfile" com em torno de 2 mil pessoas
+          caracterizadas como personalidades históricas e entre elas Tomoe Gozen é figura recorrente.</p>
+        <img src="./img/cultura-pop.jpg" alt="Personagem Archer of Inferno do jogo Fate Grand Order"
+          class="img-culturapop" id="imgCulturapop">
+      </div>
+      <div class="btn btn-saibamais" id="btn-culturapop">
+        <button onclick="myFunctionCulturapop()">Saiba mais</button>
+      </div>
+    </section>
+
+    <section class="fontes">
+      <p class="fontes-titulo">FONTES:</p>
+      <a href="https://www.tofugu.com/japan/tomoe-gozen/">
+        <p>Tofugu</p>
+      </a>
+      <a href="https://smartbitchestrashybooks.com/2019/05/kickass-women-in-history-tomoe-gozen/">
+        <p>Smart Bitches, Trashy Books</p>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Tomoe_Gozen">
+        <p>Wikipedia</p>
+      </a>
+    </section>
+
+    <section class="sobre-mim">
+      <p class="titulo-sobremim">Sobre mim</p>
+      <a href="https://midorikorin.netlify.app/">
+        <p>{ Midori Korin }</p>
+      </a>
+    </section>
+  </main>
+  <footer class="rodape">
+    <div class="rodape__principal">
+      <ul class="rodape__navegacao">
+        <li>
+          <a href=../../index.html>Home</a>
+        </li>
+        <li>
+          <a href="http://www.reprograma.com.br/" target="_blank">Conheça a {reprograma}</a>
+        </li>
+      </ul>
+      <div class="rodape__logo">
+        <img class="img-responsive" src="img/logo-white.png" alt="logo M de Maravilhosa" />
+      </div>
+      <div class="rodape__redes-sociais">
+        <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+          <img src="img/fb-icone.png" alt="Icone do facebook Reprograma" />
+          <span>/br.mdemaravilhosa</span>
+        </a>
+      </div>
+    </div>
+    <div class="rodape__cc">
+      <p>2020 | Feito com amor por Reprograma</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
