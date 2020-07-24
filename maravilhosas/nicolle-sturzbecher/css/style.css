@@ -1,0 +1,594 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 10px; /* definir uma font-size padrão */
+  }
+  
+  body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  /* define que as imagens tem que ter o tamanho máximo da div mãe */
+  .img-responsive {
+    width: 100%;
+  }
+
+  
+  /* define o tamanho da caixa */
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+  }
+  
+  /* --- NAV --- */
+  .navegacao {
+    background-color: #6745826b;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: all 1s;
+  }
+  .navegacao__logo {
+    max-width: 200px;
+  }
+  .navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navegacao__itens {
+    transition: all 1s;
+    position: absolute;
+    right: -800px;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  .navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right 0.5s;
+  }
+  .navegacao__itens li > a {
+    transition: all 0.5s;
+  }
+  .navegacao__itens li > a:hover {
+    color: #c083b9;
+  }
+  .navegacao__menu-hamburguer img {
+    border-radius: 5px;
+  }
+  .navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+  }
+  .navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  .navegacao__redes-sociais a {
+    margin: 0 1rem;
+  }
+  
+
+  /*carrossel*/
+  .carousel-item{
+    width: 100%;
+    height: 22rem;
+    padding-top: 10rem;
+  }
+  
+  .h1{
+    padding-top: 1rem;
+  }
+  .titulo-jenny{
+        font-family: 'Cabin Sketch', cursive;
+  }
+
+  .frase-jenny{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .titulo-sobre{
+    color:  pink;
+  }
+
+  .foto-centro{
+    padding-bottom: 2rem;
+  }
+
+  .corpitcho{
+    padding: 3rem;
+    padding-top: 1rem;
+  }
+
+  .p{
+    margin:5rem;
+  }
+
+  .secao-msgJenny__container{
+    font-size: 1.2rem;
+  }
+
+  .secao-msg{
+    font-family: 'Cabin Sketch', cursive;
+    color: #0066ff;
+    
+  }
+
+  .arrow {
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #0066ff;
+    transition: all 0.5s;
+    margin:auto;
+  }
+
+  .down{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+
+  .up{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+  }
+
+  .arrow:hover{
+    border-top: 10px solid pink;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+  
+  .arrow-close {
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #0066ff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+
+  .arrow-close:hover{
+    border-top: 10px solid pink;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+  
+  .show-mensage{
+    display: none;
+    font-size: 1rem;
+  }
+
+  .button-linksJenny{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .buy-books{
+    margin: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .jenny-blog{
+    margin:1rem;
+    font-size: 1.3rem;
+  }
+
+  .btn-social-Jenny{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .insta-jenny{
+    color:#0066ff;
+    border:none;
+    background-color: white;
+    margin: 1rem;
+  }
+
+  .insta-jenny:hover{
+    color:white;
+    background-color: #0066ff;
+
+  }
+
+  .fa-instagram-square{
+    font-size: 3rem;  
+  }
+
+  .fa-facebook-square{
+    color:#0066ff;
+    border:none;
+    background-color: white;
+    margin: 1rem; 
+    font-size: 3rem;
+  }
+
+  .fa-facebook-square:hover{
+    color:white;
+    background-color: #0066ff;
+  }
+
+  .fa-pinterest-square{
+    color:#0066ff;
+    border:none;
+    background-color: white;
+    margin: 1rem;
+    font-size: 3rem;
+  }
+
+  .fa-pinterest-square:hover{
+    color:white;
+    background-color: #0066ff;
+  }
+
+  .embed-responsive-item{
+    padding-bottom: 2rem;
+  }
+
+  .secao-autora{
+    color: pink;
+  }
+
+  .social-Jenny{
+    color: #0066ff;
+    background-color: white;
+    border:none;
+  }
+
+  .secao-autora__container{
+    margin-bottom: 2rem;
+  }
+
+  .show-autor{
+    display:none;
+  }
+
+  .foto-nick{
+    border-radius: 5%;
+  }
+  .nick-dev{
+    font-size: 1.2rem;
+    padding:0.7rem;
+    text-align: center;
+  }
+
+  .redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+  }
+
+  .redes-sociais_link{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .ver-tudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.3rem
+  }
+
+  /* --- FOOTER --- */
+  .rodape {
+    background-color: #323534;
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.8rem;
+  }
+  .rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  .rodape__principal > * {
+    margin: 1rem 0;
+  }
+  .rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+  .rodape__navegacao a {
+    transition: all 0.5s;
+  }
+  .rodape__navegacao a:hover {
+    color: #c083b9;
+  }
+
+  .rodape__logo {
+    max-width: 200px;
+  }
+  
+  .rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+  
+  .rodape__redes-sociais a:hover {
+    color: #c083b9;
+  }
+  
+  .rodape__redes-sociais img {
+    max-width: 10px;
+    margin-right: 0.5rem;
+  }
+  
+  .rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+  }
+  
+  .rodape__cc {
+    width: 100%;
+    background-color: #292a2a;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+  }
+  
+  
+ 
+  /*** MEDIA QUERIES ***/
+  /* TABLET */
+  @media (min-width: 768px) {
+    /* --- NAV --- */
+    .navegacao__itens {
+      position: static;
+      display: flex;
+      padding: 0;
+      width: auto;
+    }
+  
+    .navegacao__nav {
+      margin-bottom: 0;
+    }
+  
+    .navegacao__itens ul {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .navegacao__itens li {
+      font-size: 1.2rem;
+      margin: 0 0.6rem;
+    }
+  
+    .navegacao__menu-hamburguer {
+      display: none;
+    }
+  /*CARROSSEL*/
+    .imagem-carrossel {
+        object-fit: cover;
+        height: 400px;
+    }
+    .carousel-item{
+      height: 45rem;
+    }
+
+    .frase-jenny{
+      font-size: 1.6rem ;
+    }
+
+    .texto-sobre-Jenny{
+      font-size: 1.3rem;
+    }
+
+    .secao-msgJenny__container{
+      font-size: 2rem;
+    }
+
+    .secao-msg{
+      font-size: 2.3rem;
+    }
+
+    .show-mensage{
+      font-size: 1.3rem;
+    }
+
+    .secao-autora{
+      font-size: 2rem;
+    }
+
+    .nick-dev{
+      font-size: 1.5rem;
+    }
+
+
+    /* --- FOOTER --- */
+    .rodape {
+      padding-top: 0;
+    }
+  
+    .rodape__principal {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .rodape__logo img {
+      max-width: 250px;
+    }
+  
+    .rodape__navegacao > li {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .principal {
+      max-width: 650px;
+    }
+    .titulo-jenny{
+      font-size: 8rem;
+    }
+    .frase-jenny{
+      font-size: 2.2rem ;
+    }
+
+    .titulo-sobre{
+      font-size: 2.2rem;
+    }
+
+    .texto-sobre-Jenny{
+      font-size: 1.9rem;
+    }
+
+    .secao-msgJenny__container{
+      font-size: 2rem;
+    }
+
+    .secao-msg{
+      font-size: 3.2rem;
+    }
+
+    .show-mensage{
+      font-size: 1.9rem;
+    }
+
+    .secao-autora{
+      font-size: 2.5rem;
+    }
+
+    .nick-dev{
+      font-size: 2rem;
+    }
+
+    .buy-books, .jenny-blog{
+      font-size: 2rem;
+    }
+
+    .fa-pinterest-square, .fa-facebook-square, .fa-instagram-square, .fa-linkedin, .fa-github-square{
+      font-size: 4.5rem;
+    }
+
+    .ver-tudo{
+      font-size: 2rem;
+    }
+    
+  
+  /* DESKTOP */
+  @media (min-width: 1440px) {
+    .navegacao__box {
+      max-width: 80%;
+    }
+    .header {
+      min-height: 90vh;
+      background-position-y: 25%;
+    }
+    .navegacao__itens li {
+      font-size: 1.5rem;
+      margin: 0 1rem;
+    }
+    .principal {
+      max-width: 650px;
+    }
+
+    .titulo-jenny{
+      font-size: 9rem;
+    }
+    .frase-jenny{
+      font-size: 2.6rem ;
+    }
+
+    .titulo-sobre{
+      font-size: 2.6rem;
+    }
+
+    .texto-sobre-Jenny{
+      font-size: 2.4rem;
+    }
+
+    .secao-msgJenny__container{
+      font-size: 2.2rem;
+    }
+
+    .secao-msg{
+      font-size: 3.8rem;
+    }
+
+    .show-mensage{
+      font-size: 2.4rem;
+    }
+
+    .secao-autora{
+      font-size: 3rem;
+    }
+
+    .nick-dev{
+      font-size: 2.4rem;
+    }
+
+    .buy-books, .jenny-blog{
+      font-size: 2.2rem;
+    }
+
+    .fa-pinterest-square, .fa-facebook-square, .fa-instagram-square, .fa-linkedin, .fa-github-square{
+      font-size: 5rem;
+    }
+
+    .ver-tudo{
+      font-size: 2.3rem;
+    }
+    
+  }
+}
+  
+  

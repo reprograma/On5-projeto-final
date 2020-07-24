@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>M de Maravilhosa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto+Slab:700|Roboto:400,400i"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  </head>
+
+  <body>
+    <nav class="navegacao">
+      <div class="navegacao__box container">
+        <a class="navegacao__logo" href="index.html">
+          <img
+            class="img-responsive"
+            src="img/logo-white.png"
+            alt="Logo M de Maravilhosa"
+          />
+        </a>
+        <div class="navegacao__itens" id="menuResponsivo">
+          <div class="navegacao__nav">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="http://www.reprograma.com.br/" target="_blank"
+                  >Conheça a {reprograma}</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navegacao__redes-sociais">
+            <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+              <img src="img/icon-facebook.png" alt="Ícone do Facebook" />
+            </a>
+            <a href="https://twitter.com/ReprogramaBr" target="_blank">
+              <img src="img/icon-twitter.png" alt="Ícone do Twitter" />
+            </a>
+            <a href="https://www.instagram.com/reprogramabr/" target="_blank">
+              <img src="img/icon-instagram.png" alt="Ícone do Instagram" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/reprogramabr/"
+              target="_blank"
+            >
+              <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn" />
+            </a>
+          </div>
+        </div>
+        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
+          <a href="#">
+            <img src="img/menu-nav.png" alt="Menu de navegação" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--CARROSSEL-->
+    <main>
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide fonte-texto" data-interval="3000"
+                data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-75 mx-auto imagem-carrossel" src="./img/jenny1.jpg" alt="Primeiro Slide">
+                        <div class="carousel-caption d-none d-md-block"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-flex w-50 mx-auto imagem-carrossel" src="./img/jenny.png" alt="Segundo Slide">
+                        <div class="carousel-caption d-none d-md-block"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-50 mx-auto imagem-carrossel" src="./img/jenny4.jpg" alt="Terceiro Slide">
+                        <div class="carousel-caption d-none d-md-block"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-75 mx-auto imagem-carrossel" src="./img/jenny3.jpg" alt="Quarto Slide">
+                        <div class="carousel-caption d-none d-md-block"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-75 mx-auto imagem-carrossel" src="./img/jenny5.jpg" alt="Quinto Slide">
+                        <div class="carousel-caption d-none d-md-block"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-75 mx-auto imagem-carrossel" src="./img/jenny7.jpg" alt="Sexto Slide">
+                        <div class="carousel-caption d-none d-md-block"></div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <article>
+                <h1 class="display-4 text-center fonte-texto titulo-jenny"> Jenny Lawson</h1>
+                <p class="text-center text-secundary fonte-texto frase-jenny">“Quando compartilhamos nossas batalhas, outras pessoas reconhecem que podem compartilhar as suas. E, de repente, percebemos que as coisas que nos envergonhavam são as mesmas que todo mundo enfrenta uma hora ou outra. Estamos muito menos sós do que pensamos.”
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <div class="corpitcho">
+      <div>
+          <h2 class="text-left fonte-texto titulo-sobre"><b>Sobre:</b></h2>
+          <div class="texto-sobre-Jenny">
+            <p class="text-justify text secundary fonte-texto"><b>Jenny Lawson</b> é autora best seller do <i> The New York Times</i> criadora do <i>The Bloggess</i>, um blog que fala sobre seu dia a dia, maternidade, sua paixão por taxidermia e seus distúrbios mentais, Jenny tem transtorno de ansiedade, depressão, síndrome do pânico e tricotilomania, foi a partir desse blog que ela se tornou amplamente conhecida. Ela nasceu em Austin, Texas, teve uma infância insana e conta sobre os sentimentos de ansiedade que pela família era chamada de “frio na barriga” em um de seus livros. Também fala sobre sua juventude, suas tentativas de ‘fuga’, por meio de drogas e bebidas e como era vista como uma jovem esquisita, e a dificuldade de se relacionar por ter ansiedade ou fobia social. </p>
+            <img class="d-block w-50 mx-auto foto-centro" src="./img/jenny2.jpg">
+            <p class="text-justify text secundary fonte-texto">Em 2010, após receber de seu marido a notícia de que um amigo havia morrido, Jenny decidiu que não iria se permitir ter mais uma crise fortíssima de depressão, se ela podia sentir as dores e tristezas com tanta intensidade, definitivamente poderia também ser muito, extremamente feliz só de raiva! Em seu blog, começou a falar abertamente sobre sua rotina e seus gatilhos diários, e com a hashtag #FURIOUSLYHAPPY foi um dos assuntos mais comentados do twitter.</p>
+            <p class="text-justify text secundary fonte-texto">O número de pessoas que vivem com depressão, segundo a OMS, está aumentando – 18% entre 2005 e 2015. A estimativa é que, atualmente, mais de 300 milhões de pessoas de todas as idades sofram com a doença em todo o mundo. O órgão alertou ainda que a depressão figura como a principal causa de incapacidade laboral no planeta.</p>
+            <p class="text-justify text secundary fonte-texto"><i><b>“Todo transtorno mental é diferente, porque toda pessoa é diferente. Não existem curas fáceis, mas há muitas ferramentas disponíveis agora que as pessoas finalmente estão começando a falar sobre o assunto.(...) É por isso que você precisa contar com amigos, familiares e estranhos para lhe dar uma mão quando não consegue fazer o que precisa ser feito. (...) Não é sua culpa se o medicamento ou terapia que indicaram para tratar seu transtorno mental não funciona perfeitamente ou se funcionou por um tempo e depois parou de funcionar. Você não é um problema de matemática, você é uma pessoa. (...) porém acredito que existe um tratamento para cada um que se der o tempo e a paciência necessários para encontra-lo.”</i></b></p>
+            <img class="d-block w-75 mx-auto foto-centro" src="./img/jenny6.jpg">
+            <p class="text-justify text secundary fonte-texto">Jenny Lawson é um exemplo de força e de luta, de que é possível viver feliz em meio dos transtornos mentais, ela incentiva o tratamento com especialista, ela mostra que ninguém é um alien, ou talvez seja, e que se falarmos sobre isso, podemos ter uma vida de qualidade, feliz, evitando muitos finais tristes dessa doença.</p>
+            <p class="text-justify text secundary fonte-texto"><i><b>"“Espero um dia ver um mar de pessoas usando fitas prateadas como sinal de que compreendem a batalha secreta, como uma celebração das vitórias alcançadas a cada dia à medida que, individualmente, conseguimos sair das nossas trincheiras para ver nossas cicatrizes sararem e para nos lembrarmos de como é o sol. Espero um dia melhorar, e tenho certeza que vou conseguir. Espero um dia viver num mundo em que a luta particular pela estabilidade mental seja vista com orgulho e torcida pública em vez de vergonha. (…) Eu sobrevivi e faço questão de lembrar que, a cada vez que passamos por isso, ficamos um pouco mais fortes. Aprendemos novos truques no campo de batalha. Eles são aprendidos de formas terríveis, mas são úteis. Não lutamos em vão. Nós vencemos. Estamos vivos.”</i></b></p>
+            <div class="embed-responsive embed-responsive-16by9">
+             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pad8_pGEToE" allowfullscreen></iframe>
+            </div>
+            <p class="text-justify text secundary fonte-texto">Jenny foi a minha motivação pra reaprender a viver, há alguns anos vivo com transtorno de ansiedade e depressão, e quando li seus livros descobri que não estou só e por fim, decidi, ser ALUCINADAMENTE FELIZ SÓ DE RAIVA!</p>
+          </div>
+      </div>
+      <div class="secao-msgJenny__container">
+        <div class="text-center secao-msg">Você precisa de uma forcinha da Jenny hoje?</div>
+        <div onclick="showMsg()" class="arrow seta-um  down" id="umaSeta">
+        </div>
+        <div class="ta-complicado">
+          <div id="show-mensage" class="show-mensage" >
+            <p class="text-justify text secundary fonte-texto"><b>"</b>Para todos que atravessam o vale da escuridão, mas também para aqueles que caminham sob a luz do sol porém estendem a mão para a escuridão e nos acompanham:</p>
+            <p class="text-justify text secundary fonte-texto">Dias mais iluminados estão vindo aí. Uma vista mais clara vai chegar. E você vai chegar também.</p>
+            <p class="text-justify text secundary fonte-texto">Não, talvez não dure para sempre. Os momentos de luz podem durar só alguns dias de cada vez, mas aguente firme até lá. Esses dias compensam a escuridão.</p>
+            <p class="text-justify text secundary fonte-texto">Na escuridão você encontra a si próprio, passa a ser apenas ossos e exaustão e fragilidade. Na escuridão você encontra seu eu mais primário. (...)Você verá coisas qye nenhuma pessoa normal verá. Coisas terríveis. Coisas misteriosas. Coisas que tentam se infiltrar no seu cérebro como uma semente de erva daninha. (...) Que gritam mentiras. Que querem que você morra.(...) Essas coisas são monstros amedrontadores.(...) Você sabe que esses seres não são reais, mas, quando se está no buraco negro e lamacento com eles, são as coisas mais reais que existem. E eles nos querem mortos.</p>
+            <p class="text-justify text secundary fonte-texto">E, às vezes, eles conseguem.</p>
+            <p class="text-justify text secundary fonte-texto">Mas nem sempre. E não com você. Você está vivo!. Você já enfrentou e lutou contra eles. Você está assustado, cansado, e até mesmo exausto, e talvez tenha chegado a desistir. No entanto, não desistiu. Você já venceu muitas batalhas.(...)</p>
+            <p class="text-justify text secundary fonte-texto">...no breu cego das profundezas, tem certeza que está só. Mas não está. Estou com você. E não sou só eu. Algumas das melhores pessoas estão aqui também... sentindo-se cegas. Esperando. Chorando. Sobrevivendo. Distendendo dolorosamente seus espíritos para poderem aprender a respirar de baixo d'água... para fazerem o que os monstros dizem ser impossível: viver. E para, enfim, conseguirem encontrar o caminho de volta a superfície com o conhecimento do que a noite pode trazer. Para se secarem sob a luz quente que brilha tão forte e com tanta facilidade para quem vive na superfície. (...) mas com olhos diferentes... olhos que ainda veem as pessoas submersas, que permitem que estendam o braço para a escuridão e puxem outros combatentes, ou que simplesmente segurem suas mãos geladas e se sentem às margens da água para esperar pacientemente que subam para respirar.</p>
+            <p class="text-justify text secundary fonte-texto">(...)nós vivemos em andares negativos com tanta frequência que começamos a compreender que, quando o sol brilha, a vida deve ser vivida a toda velocidade, ao máximo.</p>
+            <p class="text-justify text secundary fonte-texto">(...)Às vezes, caminhamos sob a luz do sol junto com todo mundo. Às vezes, vivemos debaixo d'àgua, lutamos e crescemos. E às vezes...</p>
+            <p class="text-justify text secundary fonte-texto">...às vezes, nós voamos.<b>"</b></p>
+            <p class="text-justify text secundary fonte-texto"><b>Alucinadamente Feliz - Jenny Lawson</b> </p>
+          </div>
+        </div>
+      </div>
+      <div class="button-linksJenny">
+        <div>
+          <button type="button" class="btn btn-outline-primary buy-books" ><a href="https://busca.livrariacultura.com.br/search/?query=jenny+lawson" target="_blank">Comprar livros da Jenny</a></button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-outline-primary jenny-blog" ><a href="https://thebloggess.com/" target="_blank">The Bloggess</a></button>
+        </div>
+      </div>
+      <div class="btn-social-Jenny">
+        <div>
+          <button type="button" class="fab fa-instagram-square insta-jenny" ></button>
+        </div>
+        <div>
+          <button type="button" class="fab fa-facebook-square"></button>
+        </div>
+        <div>
+          <button type="button" class="fab fa-pinterest-square" ></button>
+        </div>
+      </div>
+    </div>
+    <div class="rodeio-de-gatos">
+      <img class="d-block w-75 mx-auto foto-centro" src="./img/ride.jpg">
+    </div>
+    <div class="secao-autora__container">
+      <div class="text-center secao-autora">
+          <p><b>{ Autora: Nicolle Sturzbecher Dias } </b></p>
+      </div>
+      <div onclick="showAutor()" class="arrow seta-dois"></div>
+      <div class="secao-autora__about closed">
+        <div id="show-autor" class="show-autor">
+          <img class="d-block w-25 mx-auto foto-nick" src="./img/Nick photo.jpg">
+          <p class="nick-dev">Desenvolvedora Front-End JR instusiasta</p>
+          <div class="redes-sociais">
+            <a href="https://www.instagram.com/nick.sturz/" target="_blank" class="redes-sociais_link fab fa-instagram-square"></a>
+            <a href="https://www.linkedin.com/in/nicolle-sturzbecher-02271437/" target="_blank" class="redes-sociais_link fab fa-linkedin"></a>
+            <a href="https://github.com/NickSturz" target="_blank" class="redes-sociais_link fab fa-github-square"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="secao-cta">
+      <a class="secao-cta__btn btn btn-outline-primary ver-tudo" href="../../index.html">Voltar para página inicial</a>
+    </div>
+    <footer class="rodape">
+      <div class="rodape__principal">
+        <ul class="rodape__navegacao">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="http://www.reprograma.com.br/" target="_blank"
+              >Conheça a {reprograma}</a
+            >
+          </li>
+        </ul>
+        <div class="rodape__logo">
+          <img
+            class="img-responsive"
+            src="img/logo-white.png"
+            alt="logo M de Maravilhosa"
+          />
+        </div>
+        <div class="rodape__redes-sociais">
+          <a href="https://www.facebook.com/ReprogramaBr/" target="_blank">
+            <img src="img/fb-icone.png" alt="Icone do facebook Reprograma" />
+            <span>/br.mdemaravilhosa</span>
+          </a>
+        </div>
+      </div>
+      <div class="rodape__cc">
+        <p>20120 | Feito com amor por Reprograma</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
