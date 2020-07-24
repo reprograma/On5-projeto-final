@@ -20,7 +20,7 @@
   <body>
     <nav class="navegacao">
       <div class="navegacao__box container">
-        <a class="navegacao__logo" href="index.html">
+        <a class="navegacao__logo" href="../../index.html">
           <img
             class="img-responsive"
             src="img/logo-white.png"
@@ -58,10 +58,18 @@
             </a>
           </div>
         </div>
-        <div class="navegacao__menu-hamburguer" id="btnResponsivo">
-          <a href="#">
+        <div class="navegacao__menu-hamburguer dropdown" id="btnResponsivo">
+          <a href="#" class="nav-link dropdown-toggle fonte-texto" id="navbarDropDownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img src="img/menu-nav.png" alt="Menu de navegação" />
           </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="../../index.html">Home</a></li>
+            <li><a class="dropdown-item" href="http://www.reprograma.com.br/">A {Reprograma}</a></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/ReprogramaBr/" target="_blank">Facebook {Reprograma}</a></li>
+            <li><a class="dropdown-item" href="https://twitter.com/ReprogramaBr" target="_blank">Twitter {Reprograma}</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/reprogramabr/" target="_blank">Instagram {Reprograma}</a></li>
+            <li><a class="dropdown-item" href="https://www.linkedin.com/company/reprogramabr/" target="_blank">LinkedIn {Reprograma}</a></li>
+          </ul>
         </div>
       </div>
     </nav>
