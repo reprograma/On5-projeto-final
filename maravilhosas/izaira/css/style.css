@@ -10,6 +10,7 @@ max-width: % ou px
 
 * {
     box-sizing: border-box;
+    margin: 0;
   }
   
   html {
@@ -33,6 +34,10 @@ max-width: % ou px
   li {
     list-style: none;
   }
+
+  p {
+    font-size: 16px;
+  }
   
   /* define que as imagens tem que ter o tamanho máximo da div mãe */
   .img-responsive {
@@ -46,10 +51,7 @@ max-width: % ou px
     max-width: 960px;
   }
   
-  /* --- BOTAO --- */
-  
- 
-  
+    
   /* --- NAV --- */
   .navegacao {
     background-color: #6745826b;
@@ -119,7 +121,79 @@ max-width: % ou px
     margin: 0 1rem;
   }
   
-  /* --- HEADER --- */
+  /* --- MAIN--- */
+
+  main{
+     width: 100vw;
+  }
+
+  .banner {
+    background: url(/maravilhosas/izaira/img/indy-colacao.JPG) center no-repeat;
+    background-size: cover;
+    height: 50vh;   
+  }
+
+  header h1{
+    font-size: 32px;
+    text-align: center;
+    padding: 5vh;
+    color: #c083b9;
+  
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  #sobre-maravilhosa img{
+    width: 30rem;
+    margin-top: 10px;
+    clip-path: circle(50% at 50% 50%);
+    
+  }
+
+  .card-text{
+    width: 80vw;
+    padding: 30px;
+    background-color: #c083b9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 6px 6px 16px rgba(192, 131, 185, 0.4);
+  }
+
+  .border-r{
+    border-radius: 0 20px ;
+    
+  }
+
+  .border-l{
+    border-radius:0 20px ;
+  }
+
+  .text{
+    color: white;
+    letter-spacing: initial;
+    line-height: 1.5em;
+    
+  }
+
+  #sobre-maravilhosa{
+    padding: 0 8em;
+  }
+
+  #section-two{
+    text-align: center;
+    margin: 30px;
+    
+  }
+
+  #section-two img{
+    max-width: 80vw;
+  }
   
   /* --- FOOTER --- */
   .rodape {
@@ -193,6 +267,7 @@ max-width: % ou px
   
   
   /*** MEDIA QUERIES ***/
+  
   /* TABLET */
   @media (min-width: 768px) {
     /* --- NAV --- */
@@ -249,7 +324,7 @@ max-width: % ou px
  
   
   /* DESKTOP */
-  @media (min-width: 1440px) {
+  @media (min-width: 1020px) {
     .navegacao__box {
       max-width: 80%;
     }
@@ -264,11 +339,92 @@ max-width: % ou px
     .principal {
       max-width: 650px;
     }
+
+
+    /* ---- MAIN -----*/
+    
+    .banner {
+      background: url(/maravilhosas/izaira/img/indy-colacao.JPG) center no-repeat;
+      background-size: cover;
+      height: 75vh;   
+      
+    }
+
+    header h1{
+      font-size: 64px;
+      text-align: center;
+      padding: 5vh;
+      color: #c083b9;
+    
+    }
+
+    .card{
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    #sobre-maravilhosa img{
+      width: 40rem;
+      clip-path: circle(50% at 50% 50%);
+      
+    }
+
+    .card-text{
+      padding: 60px;
+      background-color: #c083b9;
+      
+      margin: 20px;
+      box-shadow: 6px 6px 16px rgba(192, 131, 185, 0.4);
+    }
+
+    .border-r{
+      border-radius: 200px 0 200px 200px;
+      
+    }
+
+    .border-l{
+      border-radius: 0 200px 200px 200px;
+    }
+
+    .text{
+      color: white;
+      letter-spacing: initial;
+      line-height: 1.5em;
+      
+    }
+
+    #sobre-maravilhosa{
+      padding: 0 8em;
+    }
+
+    #section-two{
+      text-align: center;
+      margin: 30px;
+    }
+
+
+    [data-anime]{
+      opacity: 0;
+      transition: 1.5s;
+    }
+
+    [data-anime="left"]{
+      transform: translate3d(-60px, 0, 0);
+    }
+
+    [data-anime="right"]{
+      transform: translate3d( 60px, 0, 0);
+    }
+
+    [data-anime].animate{
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }
   
 
 
-  #test{
-      height: 900px;
-      background-color: red;
-  }
+ 
