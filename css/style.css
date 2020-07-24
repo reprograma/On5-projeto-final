@@ -459,9 +459,19 @@ li {
   font-size: 20px;
 }
 
+.secao-cta__btn2 {
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: black;
+  color: black;
+  font-size: 40px;
+}
+
 .secao-cta__btn:hover {
   opacity: 0.8;
 }
+
+
 /*** MEDIA QUERIES ***/
 /* TABLET */
 @media (min-width: 768px) {
@@ -493,6 +503,8 @@ li {
   .navegacao__menu-hamburguer {
     display: none;
   }
+
+
 
   /* --- HEADER --- */
   .header {
@@ -603,3 +615,4 @@ li {
     max-width: 650px;
   }
 }
+
