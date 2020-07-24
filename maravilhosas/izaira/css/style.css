@@ -36,7 +36,7 @@ max-width: % ou px
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
   }
   
   /* define que as imagens tem que ter o tamanho máximo da div mãe */
@@ -136,7 +136,7 @@ max-width: % ou px
   header h1{
     font-size: 32px;
     text-align: center;
-    padding: 5vh;
+    padding: 6vh 0 3vh 0;
     color: #c083b9;
   
   }
@@ -193,8 +193,56 @@ max-width: % ou px
 
   #section-two img{
     max-width: 80vw;
+    border-radius: 30px 0;
+    box-shadow: 6px 6px 16px rgba(50, 53, 52, 0.1);
+  }
+
+  /*  SOBRE A AUTORA */
+
+  #autora{
+    background-color: #674582;
+    border-radius: 20px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    max-width: 65%;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #frase{
+    background-color: #674582;
+    border-radius: 0 20px;
+    padding: 20px;
+    max-width: 65%;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+  }
+  #img-autora{
+    width: 14vw;
+    clip-path: circle(50% at 50% 50%);
   }
   
+  #contato{
+    text-align: center;
+  }
+
+  .link-contato img{
+    margin: 12px;
+    width: 7vw;
+  }
+
+  #contato img:hover{
+    background-color: #c083b9;
+    padding: 10px;
+    border-radius: 10px 0;
+  }
+
   /* --- FOOTER --- */
   .rodape {
     background-color: #323534;
@@ -325,6 +373,9 @@ max-width: % ou px
   
   /* DESKTOP */
   @media (min-width: 1020px) {
+    p{
+      font-size: 16px;
+    }
     .navegacao__box {
       max-width: 80%;
     }
@@ -402,9 +453,8 @@ max-width: % ou px
 
     #section-two{
       text-align: center;
-      margin: 30px;
+      margin: 10em auto 3em auto;
     }
-
 
     [data-anime]{
       opacity: 0;
@@ -423,6 +473,53 @@ max-width: % ou px
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
+
+    /*  SOBRE A AUTORA */
+
+  #autora{
+    padding: 20px;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  #img-autora{
+    width: 6vw;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  #frase{
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  
+  #autora-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
+    align-items: center;
+    max-width: 80%;
+    margin: 10em auto 3em auto ;
+  }
+  #contato{
+    text-align: center;
+  }
+
+  .link-contato img{
+    margin: 12px;
+    width: 3vw;
+  }
+
+  #contato img:hover{
+    background-color: #c083b9;
+    padding: 10px;
+    border-radius: 5px 0;
+  }
   }
   
 
