@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #c8f2f4;
+  padding: 0;
+}
+/* Banner */
+.header-capa {
+  padding: 11rem 2rem 5rem 2rem;
+  min-height: 70vh;
+  height: 480px;
+  display: flex;
+
+}
+
+.quadro_titulo {
+  font-family: 'Great Vibes', cursive;
+  font-weight: 300;
+  font-size: 10rem;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  text-shadow: 0px 0px 15px #FFD700;
+  margin-top: 150px;
+  transition: all 0.5s;
+}
+.quadro_titulo p:hover {
+  transform: scale(1.1);
+}
+
+.texto_leopoldina1 {
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: black;
+  text-align: justify;
+  margin: 4em;
+  padding: 5rem 0rem 0rem 0rem;
+  line-height: 1.5;
+}
+
+.leopoldina_foto-grande{
+  width: 60rem;
+  padding: 11rem 2rem 5rem 2rem;
+  filter: contrast(1);
+  position: relative;
+	left: 00%;
+	top: 50%;
+}
+
+.wrap {
+  padding: 5% 22%;
+  text-align: right;
+}
+
+.underlined {
+  color: black;
+  flex: 1;
+  font-size: 3rem;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #882688b3 0, #882688b3 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background .99s;
+}
+
+.underlined:hover {
+  background-size: 100% 100%;
+}
+
+.line {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #ececec;
+  width: 44%;
+  padding: 3rem;
+}
+.secao__videos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.sobre-aluna {
+  justify-content: space-around;
+  display: flex;
+}
+
+.sobre-aluna_container {
+  display: flex;
+  justify-content: center;
+  border: solid gainsboro 10px;
+  border-radius: 10px;
+  width: 94%;
+}
+
+.sobre-aluna_dados {
+  color: #63458a;
+  padding: 3rem 3rem;
+}
+
+.sobre-aluna_foto {
+  padding: 3rem 3rem;
+}
+
+.autora_foto {
+  width: 15rem;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 0px;
+}
+
+.sobre-aluna_titulo {
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  margin: 0px;
+  font-size: 2.7rem;
+  color: #674582;
+}
+
+.sobre-aluna_descricao {
+  color: #63458a;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.botom-reprograma-index {
+  text-align: center;
+  padding: 10rem 21.5rem;
+}
+
+.reprograma-index_btn {
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: #674582;
+  color: white;
+  font-size: 20px;
+}
+
+/* Mosaico */
+
+/*redes sociais*/
+.redes_sociais_aluna {
+  display: flex;
+  align-items: baseline;
+}
+
+@media(min-width:320px) {
+  .header-capa, .leopoldina_foto-grande{
+    flex-direction: column;
+    align-items: center;
+  }
+  .body {
+    font-size: 13px;
+    width: 555px;
+    height: 210px;
+    padding: 0em 1em;
+    margin-bottom: 0.5em;
+    margin-left: 68px;
+    width: 393px;
+    padding: 40px;
+  }
+  .seta_img {
+    width: 10%;
+  }
+}
