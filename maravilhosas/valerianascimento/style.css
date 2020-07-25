@@ -1,0 +1,270 @@
+/* desktop version */
+.navegacao {
+  background-color: #6745826b;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 5px rgba(0,0,0,.2);
+  padding: 1.5rem;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  transition: all 1s;
+}
+
+.navegacao__logo {
+  max-width: 200px;
+}
+
+.navegacao__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacao__itens {
+  transition: all 1s;
+  position: absolute;
+  right: -800px;
+  top: 89px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.navegacao__itens.ativo {
+  display: block;
+  right: 0;
+  top: 89px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  transition: right .5s;
+  background-color: #6745826b;
+  background-blend-mode: multiply;
+}
+
+.navegacao__itens li > a {
+  transition: all .5s;
+}
+
+.navegacao__menu-hamburguer img {
+  border-radius: 5px;
+}
+
+.navegacao__nav {
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+.navegacao__nav li {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.navegacao__redes-sociais {
+  padding-top: 8px;
+}
+
+.navegacao__redes-sociais a {
+  margin: 0 1rem;
+}
+
+.navegacao__redes-sociais img {
+  width: 24px;
+}
+
+/*.header-personalidade-neusa {
+  background-image: url(./img/fundo-entrevista.png);
+  background-position: center;
+  color:#555
+  
+}*/
+header {
+  min-height: 70vh;
+  height: 480px;
+  background:
+      linear-gradient(to top, rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.418) 50%,
+      black 100%),
+      url(./img/fundo-entrevista.png);
+  background-size: cover;
+  filter: contrast(100%);
+  background-position-y:  5%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  padding: 11rem 2rem 5rem 2rem;
+  color: white;
+}
+
+.header-personalidade-neusa {
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  font-weight: 900;
+  text-shadow: 0px 5px 15px black;
+}
+
+.secao-diva-neusa{
+  color: #363636;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.secao-diva-neusa__titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #000000;
+  box-sizing: border-box;
+}
+.secao-diva-neusa__titulolivro{
+  text-align: center;
+  color:purple;
+  align-items: center;
+  width:100vw;
+  display: flex;
+}
+
+.content-media__description{
+  color: #555;
+  margin-top: 1rem;
+  display: block;
+  font-size: 12px;
+  display: flex;
+  width: 100vw;
+}
+
+.secao-cta-neusa__btn{
+  background-color: #66CDAA;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.secao-autora__btn{
+  background-color: #66CDAA;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.secao-autora__btn:hover{
+    background-color: #7FFFD4;
+}
+
+.containerlivro{
+  font-size: large;
+
+}
+.containerlivro h4 {
+  color:rgb(88, 86, 86);
+}
+.mensagem{
+
+  margin: 20px auto;
+  width:100vw;
+  text-align: center;
+  display: none;
+}
+  
+.entrevistaTitulo{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.depoimento{
+width: auto;
+font-size: large;
+justify-content: flex-start;
+border-style: solid;
+border-color: rebeccapurple;
+padding: top 50px; ;
+}
+
+/* inicio versão mobile */
+@media(min-width:360px) and (max-width: 640px){
+.secao-diva-neusa{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+}
+  
+.header-personalidade-neusa {
+      min-height: 30vh;
+      height: 200px;
+  }
+
+  .header-personalidade__titulo {
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase
+
+}
+
+.secao-autora__btn{
+    font-size: 10px;
+    padding: 10px 82px;
+
+}
+
+.secao-cta{
+  text-align: center;
+  padding: 4rem 4rem;
+}
+
+.btn{
+  font-size:10px;
+}
+.navegacao__menu-hamburguer {
+  display: flex;
+}
+}
+/* TABLET */
+@media (min-width: 768px) {
+  /* --- NAV --- */
+  .navegacao__itens {
+    position: static;
+    display: flex;
+    padding: 0;
+    width: auto;
+  }
+
+  .navegacao__nav {
+    margin-bottom: 0;
+  }
+
+  .navegacao__itens ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navegacao__itens li {
+    font-size: 1.2rem;
+    margin: 0 0.6rem;
+  }
+
+  .navegacao__menu-hamburguer {
+    display: none;
+  }
+
+}
