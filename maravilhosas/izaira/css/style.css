@@ -1,0 +1,527 @@
+/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
+/* --- GERAL --- */
+/*
+unidades preferidas para esse CSS
+margin, padding: rem
+font-size: rem
+width: %
+max-width: % ou px
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 10px; /* definir uma font-size padrão */
+  }
+  
+  body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  p {
+    font-size: 14px;
+  }
+  
+  /* define que as imagens tem que ter o tamanho máximo da div mãe */
+  .img-responsive {
+    width: 100%;
+  }
+  
+  /* define o tamanho da caixa */
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+  }
+  
+    
+  /* --- NAV --- */
+  .navegacao {
+    background-color: #6745826b;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: all 1s;
+  }
+  
+  .navegacao__logo {
+    max-width: 200px;
+  }
+  
+  .navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navegacao__itens {
+    transition: all 1s;
+    position: absolute;
+    right: -800px;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right 0.5s;
+  }
+  
+  .navegacao__itens li > a {
+    transition: all 0.5s;
+  }
+  
+  .navegacao__itens li > a:hover {
+    color: #c083b9;
+  }
+  
+  .navegacao__menu-hamburguer img {
+    border-radius: 5px;
+  }
+  
+  .navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+  }
+  
+  .navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .navegacao__redes-sociais a {
+    margin: 0 1rem;
+  }
+  
+  /* --- MAIN--- */
+
+  main{
+     width: 100vw;
+  }
+
+  .banner {
+    background: url(/maravilhosas/izaira/img/indy-colacao.JPG) center no-repeat;
+    background-size: cover;
+    height: 50vh;   
+  }
+
+  header h1{
+    font-size: 32px;
+    text-align: center;
+    padding: 6vh 0 3vh 0;
+    color: #c083b9;
+  
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  #sobre-maravilhosa img{
+    width: 30rem;
+    margin-top: 10px;
+    clip-path: circle(50% at 50% 50%);
+    
+  }
+
+  .card-text{
+    width: 80vw;
+    padding: 30px;
+    background-color: #c083b9;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 6px 6px 16px rgba(192, 131, 185, 0.4);
+  }
+
+  .border-r{
+    border-radius: 0 20px ;
+    
+  }
+
+  .border-l{
+    border-radius:0 20px ;
+  }
+
+  .text{
+    color: white;
+    letter-spacing: initial;
+    line-height: 1.5em;
+    
+  }
+
+  #sobre-maravilhosa{
+    padding: 0 8em;
+  }
+
+  #section-two{
+    text-align: center;
+    margin: 30px;
+    
+  }
+
+  #section-two img{
+    max-width: 80vw;
+    border-radius: 30px 0;
+    box-shadow: 6px 6px 16px rgba(50, 53, 52, 0.1);
+  }
+
+  /*  SOBRE A AUTORA */
+
+  #autora{
+    background-color: #674582;
+    border-radius: 20px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    max-width: 65%;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #frase{
+    background-color: #674582;
+    border-radius: 0 20px;
+    padding: 20px;
+    max-width: 65%;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+  }
+  #img-autora{
+    width: 14vw;
+    clip-path: circle(50% at 50% 50%);
+  }
+  
+  #contato{
+    text-align: center;
+  }
+
+  .link-contato img{
+    margin: 12px;
+    width: 7vw;
+  }
+
+  #contato img:hover{
+    background-color: #c083b9;
+    padding: 10px;
+    border-radius: 10px 0;
+  }
+
+  /* --- FOOTER --- */
+  .rodape {
+    background-color: #323534;
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.8rem;
+  }
+  
+  .rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  
+  .rodape__principal > * {
+    margin: 1rem 0;
+  }
+  
+  .rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+  
+  .rodape__navegacao a {
+    transition: all 0.5s;
+  }
+  
+  .rodape__navegacao a:hover {
+    color: #c083b9;
+  }
+  
+  .rodape__logo {
+    max-width: 200px;
+  }
+  
+  .rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+  
+  .rodape__redes-sociais a:hover {
+    color: #c083b9;
+  }
+  
+  .rodape__redes-sociais img {
+    max-width: 10px;
+    margin-right: 0.5rem;
+  }
+  
+  .rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+  }
+  
+  .rodape__cc {
+    width: 100%;
+    background-color: #292a2a;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+  }
+  
+  
+  /*** MEDIA QUERIES ***/
+  
+  /* TABLET */
+  @media (min-width: 768px) {
+    /* --- NAV --- */
+    .navegacao__itens {
+      position: static;
+      display: flex;
+      padding: 0;
+      width: auto;
+    }
+  
+    .navegacao__nav {
+      margin-bottom: 0;
+    }
+  
+    .navegacao__itens ul {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .navegacao__itens li {
+      font-size: 1.2rem;
+      margin: 0 0.6rem;
+    }
+  
+    .navegacao__menu-hamburguer {
+      display: none;
+    }
+  
+    
+    /* --- FOOTER --- */
+    .rodape {
+      padding-top: 0;
+    }
+  
+    .rodape__principal {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .rodape__logo img {
+      max-width: 250px;
+    }
+  
+    .rodape__navegacao > li {
+      font-size: 1.5rem;
+    }
+  }
+  
+ 
+  
+  /* DESKTOP */
+  @media (min-width: 1020px) {
+    p{
+      font-size: 16px;
+    }
+    .navegacao__box {
+      max-width: 80%;
+    }
+    .header {
+      min-height: 90vh;
+      background-position-y: 25%;
+    }
+    .navegacao__itens li {
+      font-size: 1.5rem;
+      margin: 0 1rem;
+    }
+    .principal {
+      max-width: 650px;
+    }
+
+
+    /* ---- MAIN -----*/
+    
+    .banner {
+      background: url(/maravilhosas/izaira/img/indy-colacao.JPG) center no-repeat;
+      background-size: cover;
+      height: 75vh;   
+      
+    }
+
+    header h1{
+      font-size: 64px;
+      text-align: center;
+      padding: 5vh;
+      color: #c083b9;
+    
+    }
+
+    .card{
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    #sobre-maravilhosa img{
+      width: 40rem;
+      clip-path: circle(50% at 50% 50%);
+      
+    }
+
+    .card-text{
+      padding: 60px;
+      background-color: #c083b9;
+      
+      margin: 20px;
+      box-shadow: 6px 6px 16px rgba(192, 131, 185, 0.4);
+    }
+
+    .border-r{
+      border-radius: 200px 0 200px 200px;
+      
+    }
+
+    .border-l{
+      border-radius: 0 200px 200px 200px;
+    }
+
+    .text{
+      color: white;
+      letter-spacing: initial;
+      line-height: 1.5em;
+      
+    }
+
+    #sobre-maravilhosa{
+      padding: 0 8em;
+    }
+
+    #section-two{
+      text-align: center;
+      margin: 10em auto 3em auto;
+    }
+
+    [data-anime]{
+      opacity: 0;
+      transition: 1.5s;
+    }
+
+    [data-anime="left"]{
+      transform: translate3d(-60px, 0, 0);
+    }
+
+    [data-anime="right"]{
+      transform: translate3d( 60px, 0, 0);
+    }
+
+    [data-anime].animate{
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
+    /*  SOBRE A AUTORA */
+
+  #autora{
+    padding: 20px;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  #img-autora{
+    width: 6vw;
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  #frase{
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  
+  #autora-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
+    align-items: center;
+    max-width: 80%;
+    margin: 10em auto 3em auto ;
+  }
+  #contato{
+    text-align: center;
+  }
+
+  .link-contato img{
+    margin: 12px;
+    width: 3vw;
+  }
+
+  #contato img:hover{
+    background-color: #c083b9;
+    padding: 10px;
+    border-radius: 5px 0;
+  }
+  }
+  
+
+
+ 
