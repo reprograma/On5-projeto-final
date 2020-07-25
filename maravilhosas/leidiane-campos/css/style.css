@@ -1,0 +1,1074 @@
+/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
+/* --- GERAL --- */
+/*
+Unidades preferidas para esse CSS:
+  margin, padding: rem
+  font-size: rem
+  width: %
+  max-width: % ou px
+*/
+
+/* ------------------------------ CÓDIGO NAV E FOOTER (PADRÃO REPROGRAMA) ------------------------------ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px; /* definir uma font-size padrão */
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+  width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* --- NAV --- */
+.navegacao {
+  background-color: #4646466b;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  transition: all 1s;
+}
+.navegacao a {
+  text-decoration: none;
+}
+
+.navegacao__logo {
+  max-width: 200px;
+}
+
+.navegacao__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacao__itens {
+  transition: all 1s;
+  position: absolute;
+  right: -800px;
+  top: 85px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.navegacao__itens.ativo {
+  display: block;
+  right: 0;
+  top: 85px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  transition: right 0.5s;
+}
+
+.navegacao__itens li > a {
+  transition: all 0.5s;
+}
+
+.navegacao__itens li > a:hover {
+  color: #c083b9;
+}
+
+.navegacao__menu-hamburguer img {
+  border-radius: 5px;
+}
+
+.navegacao__nav {
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+.navegacao__nav li {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.navegacao__redes-sociais a {
+  margin: 0 1rem;
+}
+
+/* --- FOOTER --- */
+
+.rodape {
+  background-color: #323534;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+
+.rodape__principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+  margin: 1rem 0;
+}
+
+.rodape__principal a{
+  text-decoration: none;
+}
+
+.rodape__navegacao > li {
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
+.rodape__navegacao a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.rodape__navegacao a:hover {
+  color: #c083b9;
+}
+
+.rodape__logo {
+  max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+.rodape__redes-sociais a:hover {
+  color: #c083b9;
+}
+
+.rodape__redes-sociais img {
+  max-width: 10px;
+  margin-right: 0.5rem;
+}
+
+.rodape__redes-sociais span {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.rodape__cc {
+  width: 100%;
+  background-color: #292a2a;
+  font-size: 1rem;
+  opacity: 0.5;
+  text-align: center;
+}
+
+/*** MEDIA QUERIES ***/
+
+/* TABLET */
+@media (min-width: 768px) {
+
+  /* --- NAV --- */
+  .navegacao__itens {
+    position: static;
+    display: flex;
+    padding: 0;
+    width: auto;
+  }
+  
+  .navegacao__nav {
+    margin-bottom: 0;
+  }
+  
+  .navegacao__itens ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navegacao__itens li {
+    font-size: 1.2rem;
+    margin: 0 0.6rem;
+  }
+  
+  .navegacao__menu-hamburguer {
+    display: none;
+  }
+
+  /* --- HEADER --- */
+  .header {
+    min-height: 75vh;
+    background-size: cover;
+    background-position-y: 0;
+    text-align: left;
+    padding: 5rem 10rem;
+  }
+   
+  /* --- FOOTER --- */
+  .rodape {
+    padding-top: 0;
+  }
+  
+  .rodape__principal {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .rodape__logo img {
+    max-width: 250px;
+  }
+  
+  .rodape__navegacao > li {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .principal {
+    max-width: 650px;
+  }
+}
+
+  /* DESKTOP */
+@media (min-width: 1440px) {
+  .navegacao__box {
+    max-width: 80%;
+  }
+  .header {
+    min-height: 90vh;
+    background-position-y: 25%;
+  }
+  .navegacao__itens li {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }
+  .principal {
+    max-width: 650px;
+  }
+}
+
+/* ------------------------------ FIM DO CÓDIGO NAV E FOOTER (PADRÃO REPROGRAMA) ------------------------------ */
+
+
+
+/* ------------------------- ÍNICIO CÓDIGO PÁGINA EDITH STEIN (Aluna: Leidiane Campos) ------------------------- */
+
+/* --- HEADER --- */
+
+.header {
+  min-height: 70vh;
+  height: 500px;
+  background: linear-gradient(
+    to top,
+    rgba(3, 3, 3, 0.781) 0,
+    rgba(196, 61, 223, 0.05) 50%,
+    black 100%
+  ),
+    url(../img/banner-site-mobile.png);
+  background-size: cover;
+  filter: contrast(100%);
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  padding: 11rem 2rem 5rem 2rem;
+  color: white;
+}
+
+/* --- BIOGRAFIA --- */
+
+.biografia {
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+.biografia__titulos h1 {
+  color: #5a5236;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 3rem;
+  text-transform: none;
+}
+
+.biografia__titulos p {
+  color: #aaa9a9;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.biografia__titulos {
+  color: #5a5236;
+  font-weight: 600;
+  line-height: 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+  order: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.biografia__menu__desktop {
+  display: none;
+}
+
+.biografia__menu__mobile {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.biografia__menu__mobile li {
+  background: #c0b283;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: .5rem;
+  width: 3rem;
+  height: 3rem;
+  padding-top: .5rem;
+  text-align: center;
+}
+
+.biografia__titulos_unitario {
+  text-transform: uppercase;
+}
+
+.biografia__titulos_unitario:hover{
+  cursor: pointer;
+  color: #9e9696;
+}
+
+.biografia__titulos_click {
+  color: #5a5236;
+  font-weight: 800;
+}
+
+.biografia__titulos_click_mobile {
+  color: white;
+  font-weight: 800;
+}
+
+.biografia__textos {
+  display: flex;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  height: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  order: 2;
+  padding: 2rem;
+  text-align: left;
+}
+
+.biografia__textos_borda {
+  background-color: #c0b283;
+  border: 0.1rem solid #c0b283;
+  width: .3rem;
+  height: auto;
+  margin-right: 2rem;
+}
+
+/* --- SLIDER --- */
+
+.biografia__slider {
+  max-width: 80%;
+  margin: 0 auto;
+  order: 3;
+  padding: 2rem;
+}
+
+/* Container do Slider */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Imagens ficam escondidads por padrão */
+.mySlides {
+  display: none;
+}
+
+/* Botões 'Prev' e 'Next' */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Coloca o botão 'next' à direita */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Coloca cor nos botões 'next' e 'prev' ao passar foto */
+.prev:hover, .next:hover {
+  background-color: #635833;
+}
+
+/* Número de fotos, posicionado no canto superior esquerdo (1/8) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Bolinhas do slider */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 1px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Animação fading */
+.fading {
+  animation-name: fading;
+  animation-duration: 1.5s;
+}
+
+@keyframes fading {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --- FRASE DE EFEITO --- */
+
+.frase__de__efeito {
+  color: #292a2a;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 3rem;
+  margin: 0 auto;
+  max-width: 50%;
+  line-height: 4rem;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+.frase__de_efeito__texto1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.frase__de_efeito__texto2 {
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+}
+
+.frase__de_efeito__creditos {
+  font-size: 1rem;
+  font-style: normal;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+
+/* --- IMAGEM CENTRAL --- */
+
+.imagem__central {
+  margin: 0 auto;
+}
+
+.imagem__central_texto {
+  font-size: 1.3rem;
+  max-width: 50%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.imagem__central_imagem {
+  margin: 0 auto;
+  max-width: 95%;
+  transition: 1s all;
+} 
+
+.imagem__central_img {
+  max-width: 100%;
+}
+
+.imagem__central_img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+
+
+/* --- DOCUMENTÁRIO --- */
+
+.documentario {
+  background: linear-gradient(
+    to bottom,
+    rgba(184, 155, 63, 0.1) 0,
+    black 500%
+  ),
+    url(../img/background-1.png);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.documentario__bloco {
+  text-align: center;
+}
+
+.documentario__video {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.documentario__video_video {
+  max-width: 100%;
+  transition: 0.8s all;
+}
+
+.documentario__video_video:hover {
+  transform: scale(1.05);
+}
+
+.documentario__video_titulo {
+  color: #635833;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.documentario__video_legenda {
+  color: #292a2a;
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+  text-align: left;
+}
+
+.documentario__frase {
+  color: #292a2a;
+  font-size: 2rem;
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  line-height: 3rem;
+  max-width: 60%;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.documentario__frase p {
+  margin: 0;
+}
+
+/* --- OBRAS --- */
+
+.obras__bloco {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.obras__titulo{
+  color: #635833;
+  font-size: 2rem;
+  font-weight: 900;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.obras__descricao {
+  color: #292a2a;
+  font-size: 1.4rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  text-align: justify;
+}
+
+.obras__livro {
+  box-shadow: 0px 0px 18px -6px rgba(50, 50, 50, 0.77);
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  max-width: 60%;
+  transition: 0.8s all;
+}
+
+.obras__livro:hover {
+  transform: scale(1.05);
+}
+
+.obras__livro_imagem {
+  max-width: 100%;
+}
+
+/* --- REFLEXÃO/ÁUDIO ---*/
+
+.reflexao__bloco {
+  color: aliceblue;
+  max-width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 7, 7, 0.5) 0,
+    black 100%
+  ),
+    url(../img/background-1.png);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.reflexao__titulo {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.reflexao__chapeu {
+  color: rgb(248, 246, 246);
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.reflexao__descricao {
+  color: #fafafa;
+  font-size: 2rem;
+  font-weight: 800;
+  padding-top: .5rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.reflexao__imagem_audio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.reflexao__imagem {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.reflexao__imagem_img {
+  max-width: 100%;
+  transition: all .5s;
+}
+
+.reflexao__audio_mp3:hover,
+.reflexao__imagem_img:hover{
+  transform: scale(1.1);
+}
+
+.reflexao__audio {
+  max-width: 100%;
+  padding-left: 2rem;
+  text-align: center;
+}
+
+.reflexao__audio_descricao {
+  text-shadow: 2px -2px 10px rgb(53, 53, 53);
+  font-size: 1.2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.reflexao__audio_mp3 {
+  color: #c0b283;
+  height: 3rem;
+  width: 25rem;
+  transition: all .5s;
+}
+
+/* --- AUTORA --- */
+
+.autora__botao {
+  align-items: center;
+  background-color: #010101;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.autora__botao_btn_2,
+.autora__botao_btn {
+  background-color: #c0b283;
+  border-color: #c0b283;
+  border-radius: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  margin: 1rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  transition: all .5s;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.autora__botao_btn_2 {
+  background-color: rgb(105, 104, 104);
+  border-color: rgb(105, 104, 104);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.autora__botao_btn_2:hover,
+.autora__botao_btn:hover {
+  background-color: #c083b9;
+  border-color: #c083b9;
+  color: white;
+  transform: scale(1.04);
+}
+
+.autora__botao_btn_2:hover {
+  background-color: #aaa9a9 ;
+  border-color: #aaa9a9;
+  color: #292a2a;
+}
+
+.autora__titulo {
+  color: #797979;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.autora__imagem {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.autora__imagem_img {
+  max-width: 100%;
+}
+
+.autora__descricao {
+  font-size: 1.4rem;
+  padding: 2rem;
+  text-align: justify;
+}
+
+.autora__descricao strong {
+  color: #797979;
+  background-color: #e9ddb7;
+  font-weight: 600;
+}
+
+.autora__midiassociais {
+  background-color: #797979;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.autora__midiassociais_descricao {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.autora__midiassociais_links {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.autora__midiassociais_links_link {
+  padding: 1rem;
+}
+
+.autora__midiassociais_img {
+  max-width: 40%;
+  transition: all .3s;
+}
+
+.autora__midiassociais_img:hover {
+  transform: scale(1.3);
+}
+
+.autora__frasesfinal {
+  color: #9797954f;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 5rem;
+}
+
+.autora__voltartopo {
+  color: rgba(255, 255, 255, 0.486);
+  font-size: .9rem;
+  letter-spacing: .3rem;
+  padding-top: 3rem;
+  text-transform: uppercase;
+}
+
+.autora__voltartopo:hover{
+  color: #e9ddb7;
+  text-decoration: none;
+}
+
+/*** MEDIA QUERIES ***/
+
+/* TABLET */
+
+@media (min-width: 560px) {
+  .reflexao__imagem_audio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 70%;
+  }
+
+  .reflexao__imagem {
+    max-width: 100%;
+  }
+
+  .reflexao__imagem_img {
+    max-width: 100%;
+    transition: all .5s;
+  }
+
+  .reflexao__audio_mp3:hover,
+  .reflexao__imagem_img:hover{
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) {
+  
+  /* --- HEADER --- */
+  
+  .header {
+    height: 650px;
+  }
+
+  /* --- BIOGRAFIA --- */
+
+  .biografia__slider {
+    max-width: 50%;
+  }
+
+  /* --- REFLEXÃO --- */
+
+  .reflexao__audio {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* --- OBRAS --- */
+
+  .obras__livros {
+    display: flex;
+    justify-content: center;
+  }
+
+  .obras__livro {
+    max-width: 25%;
+    object-fit: cover;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  /* --- HEADER --- */
+
+  body {
+    font-size: 1.8rem;
+  }
+
+  .header {
+    min-height: 70vh;
+    height: 650px;
+    background: linear-gradient(
+      to top,
+      rgba(3, 3, 3, 0.781) 0,
+      rgba(196, 61, 223, 0.05) 50%,
+      black 100%
+    ),
+      url(../img/banner-site.png);
+    background-size: cover;
+    filter: contrast(100%);
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    padding: 11rem 2rem 5rem 2rem;
+    color: white;
+  }
+
+  /* --- BIOGRAFIA --- */
+
+  .biografia {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .biografia__menu__mobile {
+    display: none;
+  }
+
+  .biografia__menu__desktop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .biografia__slider { 
+    max-width: 30%;
+    margin-left: 1rem;
+    margin-right: 0;
+    order: 3;
+    padding: 2rem;
+    }
+
+  .biografia__textos {
+    display: flex;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 40%;
+    order: 2;
+    padding: 2rem;
+    text-align: left;
+  }
+
+  .biografia__titulos {
+    color: #585858;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    max-width: 30%;
+    margin-left: 2rem;
+    margin-right: 0;
+    order: 1;
+    padding: 2rem;
+    padding-left: .1rem;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  .biografia__textos_borda_desktop {
+    background-color: #c0b283;
+    border: 0.1rem solid #c0b283;
+    width: .3rem;
+    height: auto;
+    margin-right: 2rem;
+   }
+
+  /* --- REFLEXÃO --- */
+
+  .reflexao__audio_descricao {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 100;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .reflexao__audio_mp3 {
+    width: 40rem;
+  }
+}
+
+/* ------------------------- FIM DO CÓDIGO - PÁGINA EDITH STEIN (Aluna: Leidiane Campos) -------------------------*/
