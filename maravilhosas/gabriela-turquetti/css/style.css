@@ -1,0 +1,433 @@
+/* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
+/* --- GERAL --- */
+/*
+unidades preferidas para esse CSS
+margin, padding: rem
+font-size: rem
+width: %
+max-width: % ou px
+*/
+
+/* INICIO BODY */
+* {
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 12px; /* definir uma font-size padrão */
+}
+  
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+ul {
+    padding: 0;
+}
+  
+  li {
+    list-style: none;
+  }
+  
+  /* define que as imagens tem que ter o tamanho máximo da div mãe */
+  .img-responsive {
+    width: 100%;
+  }
+  
+  /* define o tamanho da caixa */
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+
+  }
+
+  .curiosidades_text {
+    margin: 20px;
+  }
+  .curiosidades_text li {
+    list-style: circle;
+    text-align: justify;
+  }
+  
+  /* --- NAV --- */
+  .navegacao {
+    background-color: #6745826b;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: all 1s;
+  }
+  
+  .navegacao__logo {
+    max-width: 200px;
+  }
+  
+  .navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navegacao__itens {
+    transition: all 1s;
+    position: absolute;
+    right: -800px;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+  }
+  
+  .navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem 0;
+    transition: right 0.5s;
+  }
+  
+  .navegacao__itens li > a {
+    transition: all 0.5s;
+  }
+  
+  .navegacao__itens li > a:hover {
+    color: #c083b9;
+  }
+  
+  .navegacao__menu-hamburguer img {
+    border-radius: 5px;
+  }
+  
+  .navegacao__nav {
+    margin-bottom: 3rem;
+    margin-right: 2rem;
+  }
+  
+  .navegacao__nav li {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .navegacao__redes-sociais a {
+    margin: 0 1rem;
+  }
+  /* FIM NAV */
+  
+  /* --- INICIO HEADER --- */
+  .header {
+    min-height: 70vh;
+    height: 480px;
+    background: linear-gradient(
+        to top,
+        rgba(3, 3, 3, 0.781) 0,
+        rgba(196, 61, 223, 0.418) 50%,
+        black 100%
+      ),
+      url(/maravilhosas/gabriela-turquetti/img/photo_header.png);
+    background-size: cover;
+    filter: contrast(100%);
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    padding: 11rem 2rem 5rem 2rem;
+    color: white;
+  }
+  
+  .principal__titulo {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 0px 5px 15px black;
+  }
+  
+  .principal__sub {
+    font-weight: 300;
+    margin: 2rem 0 3rem 0;
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 15px black;
+  }
+  
+  /* --- FIM HEADER --- */
+
+    /* INICIO MAIN - CONTEUDO */
+    .conteudo {
+        text-align: center;
+        margin: 15px;
+        line-height: 2.0;
+    }
+    .img {
+        width: 250px;
+        border-radius: 50%;
+    }
+
+    iframe {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .quote {
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 30px;
+      width: 350px;
+      background-color: #6745826b;
+      border-radius: 10px;
+      font-size: 1.25rem;
+
+    }
+
+    #btn_autora {
+        color: white;
+        background-color: #6745826b;
+        display: block;
+        max-width: 250px;
+        text-align: center;
+        transition: all 0.5s;
+        margin: 0 auto;
+        font-weight: bold;
+        padding: 1rem 3rem;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        border: none;
+    }
+
+    #btn_autora:hover{
+      color:#6745826b;
+      background-color: white;
+    }
+
+    #autora {
+      background-color: #6745826b;
+      width: 400px;
+      margin: auto;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+
+
+   /* --- FOOTER --- */
+
+   .rodape {
+    background-color: #323534;
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.8rem;
+  }
+  
+  .rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  
+  .rodape__principal > * {
+    margin: 1rem 0;
+  }
+  
+  .rodape__navegacao > li {
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+  
+  .rodape__navegacao a {
+    transition: all 0.5s;
+  }
+  
+  .rodape__navegacao a:hover {
+    color: #c083b9;
+  }
+  
+  .rodape__logo {
+    max-width: 200px;
+  }
+  
+  .rodape__redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+  }
+  
+  .rodape__redes-sociais a:hover {
+    color: #c083b9;
+  }
+  
+  .rodape__redes-sociais img {
+    max-width: 10px;
+    margin-right: 0.5rem;
+  }
+  
+  .rodape__redes-sociais span {
+    display: flex;
+    font-size: 1.5rem;
+  }
+  
+  .rodape__cc {
+    width: 100%;
+    background-color: #292a2a;
+    font-size: 1rem;
+    opacity: 0.5;
+    text-align: center;
+  }
+
+  /* --- INICIO MEDIA QUERY TABLET --- */
+@media(min-width: 768px) {
+  .navegacao__itens {
+    position: static;
+    display: flex;
+    padding: 0;
+    width: auto;
+  }
+
+  .navegacao__nav {
+    margin-bottom: 0;
+  }
+
+  .navegacao__itens ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navegacao__itens li {
+    font-size: 1.2rem;
+    margin: 0 0.6rem;
+  }
+
+  .navegacao__menu-hamburguer {
+    display: none;
+  }
+  .navegacao__redes-sociais {
+    margin: auto;
+  }
+  .rodape {
+    padding-top: 0;
+  }
+
+  .rodape__principal {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .rodape__logo img {
+    max-width: 250px;
+  }
+
+  .rodape__navegacao > li {
+    font-size: 1.5rem;
+  }
+
+}
+  /* --- FIM MEDIA QUERY TABLET --- */
+
+/* 
+MEDIA QUERY DESKTOP */
+@media (min-width: 1280px){
+
+  /* BODY */
+
+  body{
+    font-size: 1.5rem;
+  }
+
+  main {
+    margin: 20px;
+  }
+  .historico_content{
+    display: flex;
+  }
+
+  .historico2_content{
+    display: flex;
+  }
+
+  .curiosidades_content{
+    display: flex;
+  }
+
+  .vida_content{
+    display: flex;
+    text-align: justify;
+  }
+
+  .videos_content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .quote {
+    padding: 35px;
+    width: 600px;
+    font-size: 1.5rem;
+  }
+
+  .historico_img, .historico2_img, .curiosidades_img, .vida_img {
+    margin: auto;
+  } 
+
+  #autora {
+    background-color: #6745826b;
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  .img{
+    width: 35rem;
+  }
+  #btnResponsivo{
+    display: none;
+  }
+
+  iframe {
+    width: 600px;
+    margin: 10px;
+}
+.historico_text, .historico2_text, .curiosidades_text, .vida_text {
+  width: 60%;
+  text-align: justify;
+}
+.curiosidades_text{
+  margin: 0;
+}
+/* FOOTER */
+  .rodape__principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .rodape__navegacao, .rodape__logo, .rodape__redes-sociais {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+}
