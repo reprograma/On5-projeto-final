@@ -284,15 +284,12 @@ li {
     margin: 0 auto;
 }
 
-.ref-container h3 {
-    
-}
-
 .ref-titulo {
     text-transform: uppercase;
     color: #63458a;
     font-size: 1.5rem;
     margin: 0;
+    text-align: center;
 }
 
 .ref-texto {
@@ -305,11 +302,7 @@ li {
     font-size: 1.5rem;
     padding-left: 10px;
     text-decoration: underline;
-}
-
-.ref-item a {
-    font-size: 1.5rem;
-    text-decoration: underline;
+    font-style: italic;
 }
 
 .ref-item {
