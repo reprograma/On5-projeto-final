@@ -9,7 +9,11 @@ html {
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   margin: 0;
-  background: url(/img/Fundo\ estreladoPreto.jpg);
+  background: linear-gradient(to top,
+  rgba(3, 3, 3, 0.781) 0,
+  rgba(61, 67, 223, 3%) 50%,
+  black 100%),
+  url(../img/FundoEstreladoPreto.jpg);
 }
 
 a {
@@ -896,9 +900,14 @@ img{
     padding: 50px 0px 30px 0px;
   }
 
+  #carouselGrid{
+    max-width: 70%;
+    margin: auto;
+  }
+
   .carousel-caption>h5 {
     background-color: gray;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #licoesAprendidas, #carouselExampleIndicators{
@@ -907,6 +916,14 @@ img{
 
   .imgCard{
     padding: 10px;
+  }
+
+  .recomendoFotos {
+    max-width: 80%;
+    margin: auto;
+  }
+  .imgCard{
+    max-width: 12.5vw;
   }
 
   .secao-eu-autora__dados p {
