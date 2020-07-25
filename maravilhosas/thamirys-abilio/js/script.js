@@ -24,6 +24,8 @@
 //       "transparent";
 //   }
 // });
+let cardTimeline = document.querySelector(".card");
 
-let timelineCard: document.querySelector(".content");
-
+cardTimeline.addEventListener("mouseover",function (event) {
+  event.target.style.color = "black";
+})
