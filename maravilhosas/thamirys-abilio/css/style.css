@@ -31,8 +31,8 @@ p{
   color: inherit;
   font-size: 1.5em;
   text-align: center;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 ul {
   padding: 0;
@@ -55,6 +55,7 @@ li {
 }
 .container-resumo{
   display: flex;
+  font-size: 1.2rem;
   text-indent:10%;
   text-align: justify;
   text-overflow: clip;
@@ -427,8 +428,8 @@ li {
 }
 .icones{
   font-size: 2.5em;
-
 }
+
 
 /* FORMATAÇÃO TIMELINE */
 .timeline {
@@ -446,12 +447,17 @@ li {
   left: 50%;
   margin-left: -3px;
 }
+
+
 /* VERIFICAR ESSE SELETOR era container mas deu conflto com header*/
 .card {
   padding: 10px;
   position: relative;
   background-color: inherit;
   width:50%;
+}
+.timeline div:hover{
+  background-color: rgb(171, 130, 226);
 }
 /* fazer container da foto desse jeitinho */
 .card::after {

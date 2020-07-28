@@ -24,14 +24,8 @@ window.addEventListener("scroll", function() {
       "transparent";
   }
 });
-// EVENTO NOS CARDS DA TIMELINE
-let cardTimeline = document.querySelector(".card");
 
-cardTimeline.addEventListener("mouseover",function (event) {
-  event.target.style.color = "black";
-})
-
-// EVENTO SETINHA SAIBA MAIS SOBRE A AUTORA
+// EVENTO SETINHA SAIBA MAIS SOBRE A AUTORA ok
 const setaAutora = document.querySelector('.arrow')
 setaAutora.addEventListener('click', function (e) {
   e.preventDefault()
