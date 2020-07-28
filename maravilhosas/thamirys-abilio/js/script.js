@@ -24,8 +24,18 @@ window.addEventListener("scroll", function() {
       "transparent";
   }
 });
+// EVENTO NOS CARDS DA TIMELINE
 let cardTimeline = document.querySelector(".card");
 
 cardTimeline.addEventListener("mouseover",function (event) {
   event.target.style.color = "black";
+})
+
+// EVENTO SETINHA SAIBA MAIS SOBRE A AUTORA
+const setaAutora = document.querySelector('.arrow')
+setaAutora.addEventListener('click', function (e) {
+  e.preventDefault()
+  setaAutora.classList.toggle('arrow-close')
+  const autoraSobre = document.querySelector('.secao-autora__about')
+  autoraSobre.classList.toggle('opened');
 })
