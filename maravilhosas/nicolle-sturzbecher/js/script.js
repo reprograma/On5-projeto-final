@@ -1,5 +1,5 @@
 //reprograma menu MAS NÃO FUNFOU PQ? Não sei SOCORRO
-(function() {
+/*(function() {
     var menuResponsivo = document.getElementById("menuResponsivo");
     var btnResponsivo = document.getElementById("btnResponsivo");
   
@@ -25,7 +25,7 @@
         "transparent";
     }
   });
-
+*/
 
 
 //SELECTORS
