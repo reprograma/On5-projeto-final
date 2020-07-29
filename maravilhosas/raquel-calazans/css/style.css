@@ -1,9 +1,7 @@
 /* --- MOBILE FIRST - iPhone 7 - width < 768px --- */
 /* --- MOBILE FIRST - Mobile L - width < 425px --- */
 
-
 /* --- GERAL --- */
-
 
 /*
 unidades preferidas para esse CSS
@@ -42,14 +40,12 @@ li {
 
 
 /* define que as imagens tem que ter o tamanho máximo da div mãe */
-
 .img-responsive {
     width: 100%;
 }
 
 
 /* define o tamanho da caixa */
-
 .container {
     margin: 0 auto;
     width: 100%;
@@ -58,7 +54,6 @@ li {
 
 
 /* --- BOTAO --- */
-
 .btn {
     text-transform: uppercase;
     font-weight: bold;
@@ -93,9 +88,7 @@ li {
     margin: 0 auto;
 }
 
-
 /* --- NAV --- */
-
 .navegacao {
     background-color: #6745826b;
     color: white;
@@ -185,7 +178,7 @@ li {
 
 .principal__titulo {
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 900;
     text-shadow: 0px 5px 15px black;
     text-align: center;
@@ -210,10 +203,10 @@ li {
 
 .citacao:hover p {
     transform: scale(1.1);
-} 
+}
 
 .maravilhosa {
-    padding:  2rem;
+    padding: 2rem;
 }
 
 .maravilhosa__titulo {
@@ -244,7 +237,7 @@ li {
 }
 
 .logo-site {
-    max-width: 30rem;
+    max-width: 26rem;
     margin: 0 auto;
     display: block;
 }
@@ -254,15 +247,17 @@ li {
 }
 
 .depoimento__slider {
-    max-width: 430px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
 .depoimento__texto {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     text-align: justify;
-    padding: 0px 60px 0px 60px;
     font-family: 'Dancing Script', cursive;
+    width: 70%;
+    margin: auto;
+    padding-top: 1em;
 }
 
 .depoimento__autora {
@@ -326,18 +321,13 @@ li {
 
 /* Slideshow container */
 .slideshow-container {
-    width: 100%;
     position: relative;
-    margin: auto;
     border: 2px solid #63458a;
 }
 
 /* Imagens ficam escondidads por default */
 .mySlides {
     display: none;
-    width: 400px;
-    height: 337px;
-    margin: 0 auto;
 }
 
 
@@ -426,7 +416,6 @@ li {
 }
 
 /* --- FOOTER --- */
-
 .rodape {
     background-color: #323534;
     color: white;
@@ -498,7 +487,6 @@ li {
 
 
 /* --- PEFIL DIVA--- */
-
 .secao-diva {
     display: flex;
     flex-direction: column;
@@ -558,7 +546,6 @@ li {
 
 
 /* --- AUTORA --- */
-
 .secao-autora {
     display: flex;
     flex-direction: column;
@@ -627,7 +614,7 @@ li {
     border-radius: 5px;
     display: flex;
     flex-direction: row;
-    max-width: 350px;
+    max-width: 330px;
 }
 
 .secao-autora__about img {
@@ -748,17 +735,26 @@ li {
     .rodape__navegacao>li {
         font-size: 1.5rem;
     }
-    /* --- SECTION MARAVILHOSA ---*/
+    /* --- AUTORAL --- */
     .maravilhosa {
-        padding: 0 3rem;
+        padding: 0 4rem;
     }
     .maravilhosa__foto-perfil {
         max-width: 23rem;
     }
+    .logo-site {
+      max-width: 30rem;
+    }
     .ref-aut {
         display: flex;
-        justify-content: space-evenly;
-        padding: 2rem 3rem;
+        justify-content: space-around;
+        padding: 2rem 4rem;
+    }
+    .secao-autora {
+        padding: 0;
+    }
+    .secao-autora__container {
+        width: 300px;
     }
 }
 
@@ -792,7 +788,7 @@ li {
     .secao-autora__dados {
         margin: 0 3rem;
     }
-    /* --- SECTION MARAVILHOSA ---*/
+    /* --- AUTORAL --- */
     .maravilhosa {
         padding: 0 8rem;
     }
@@ -822,11 +818,17 @@ li {
     .ref-aut {
         padding: 4rem 8rem;
     }
+    .secao-autora__dados {
+      margin: 0;
+    }
+    .secao-cta {
+        padding-right: 0;
+        margin: 0 8rem;
+    }
 }
 
 
 /* DESKTOP */
-
 @media (min-width: 1440px) {
     .navegacao__box {
         max-width: 80%;
@@ -842,6 +844,7 @@ li {
     .principal {
         max-width: 650px;
     }
+    /* --- AUTORAL --- */
     .maravilhosa {
         padding: 0 15rem;
     }
@@ -859,6 +862,7 @@ li {
     }
     .secao-cta {
         margin: 0 15rem;
+        padding-right: 0;
     }
     .ref-container {
         width: 350px;
