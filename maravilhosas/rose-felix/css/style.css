@@ -61,7 +61,7 @@ border-radius: 3px;
 transform: translateY(-4px);
 transition: .3 linear;
 font-size: 12px;
-box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.7);
+box-shadow:  0 4px 8px 0 rgb(255, 223, 27, 0.3);
 }
 
 .navegacao__menu-hamburguer img {
@@ -100,6 +100,7 @@ max-width: 960px;
 }
 .lado-a-lado{
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 .carreira img{
   width: 50%;
@@ -367,6 +368,7 @@ padding: 1.5rem 0;
 
 .rodape__principal>* {
 margin: 1rem 0;
+
 }
 
 .rodape__navegacao>li {
@@ -419,10 +421,7 @@ text-align: center;
 *{
 font-size: 25px;
 }
-section h2{
-text-shadow: purple;
 
-}
 .lado-a-lado{
   margin-top: 40px;
   display: flex;
