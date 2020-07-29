@@ -8,6 +8,7 @@ body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 1em;
   font-weight: 300;
+  line-height: 1.5em; /* espacinho entre as linhas */
 }
 
 main {
@@ -166,7 +167,7 @@ li {
 div.principal > h1 {
   font-size: 1.8rem;
   font-weight: 600;
-  margin-bottom: 5rem;
+  margin-top: 6em;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0px 5px 15px black;
@@ -175,6 +176,19 @@ div.principal > h1 {
 /* -----MAIN----- */
 
 /* -----Album----- */
+.album img {
+  opacity: 50%;
+  transform: translateZ(0);
+}
+
+.album img:hover {
+  opacity: 100%;
+}
+
+p {
+  padding-bottom: 1em;
+}
+
 .fotos {
   color: #767676;
   margin-top: 1em; /*espacinho depois do container*/
@@ -192,6 +206,10 @@ div.principal > h1 {
 .foto__text h3 {
   font-size: 18px;
   padding-bottom: 1em;
+}
+
+.foto__text p {
+  line-height: 1.3em;
 }
 
 .foto__title {
@@ -238,14 +256,23 @@ div.principal > h1 {
 
 .ftcurdos {
   background: url(../img/car4.jpg);
+  opacity: 50%;
+
+}
+
+.ftwom1 {
+  background: url(../img/YPJ.jpg);
+  opacity: 50%;
 }
 
 .ftwom {
   background: url(../img/car2.jpg);
+  opacity: 50%;
 }
 
 .ftguerra {
   background: url(../img/ftwar.jpg);
+  opacity: 50%;
 }
 
 .parallax {
@@ -255,10 +282,14 @@ div.principal > h1 {
   background-repeat: no-repeat;
   background-size: cover;
   /* /parallax */
-  height: 10em;
+  height: 15em;
   margin: 0;
   padding: 6rem 2rem 5rem 2rem;
   max-width: 100%;
+}
+
+.center {
+  text-align: center;
 }
 
 .wom li {
@@ -270,6 +301,13 @@ div.principal > h1 {
   margin-bottom: 1em;
 }
 
+.flag {
+  margin: 0 auto;
+  width: 12%;
+  height: 12%;
+  padding: 0 0 1em 0;
+}
+
 .slider {
   display: flex;
   justify-content: center;
@@ -277,7 +315,7 @@ div.principal > h1 {
 }
 
 .slides {
-  opacity: 50%;
+  /* opacity: 50%; */
   max-width: 110%;
 }
 
@@ -308,10 +346,15 @@ div.principal > h1 {
   font-weight: 300;
 }
 
+.video-container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 .fontes {
   margin-top: 1em;
   color: #fff;
-  font-size: 0.6em;
+  font-size: 0.7em;
 }
 
 .fontes li:hover {
@@ -321,6 +364,10 @@ div.principal > h1 {
 /* ---AUTORA--- */
 .luciana {
   margin-top: 5em;
+}
+
+.luciana h1 {
+  margin: 0 auto;
 }
 
 .luciana h1:hover {
@@ -344,15 +391,15 @@ div.principal > h1 {
   display: flex;
 }
 
-.ex h3 {
+.ex p {
   font-size: 1em;
   font-weight: 300;
-  justify-content: center;
-  padding: 1.5em;
-  text-align: center;
+  /* justify-content: center; */
+  padding: 2em 0 0 1.5em;
+  /* text-align: center; */
 }
 
-.portifolio a:hover {
+.portfolio a:hover {
   color: #4DA2BB;
 }
 
@@ -536,7 +583,7 @@ div.principal > h1 {
   }
 
   .slides {
-    max-width: 30%;
+    max-width: 50%;
   }
 
   iframe {
@@ -551,6 +598,10 @@ div.principal > h1 {
   .rodape__principal {
     display: flex;
     align-items: center;
+  }
+
+  .foto__parag {
+    margin: 0 8em;
   }
 
 }
