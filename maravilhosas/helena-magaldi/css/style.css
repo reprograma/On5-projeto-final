@@ -8,29 +8,230 @@ width: %
 max-width: % ou px
 */
 
+.pictures {
+    flex-wrap: wrap;
+    display: flexbox;
+  }
+
+
+#carrosel {
+  margin-top: 120px;
+}
+
+.explanationpicture {
+  max-width: 100%;
+}
+
+.foto-autora {
+  border-radius: 50%;
+  margin-top: 4rem;
+}
+.explanationotebook {
+  padding-right: 10px;
+  margin: 15px;
+}
+
+.fullnotebook {
+  padding-right: -20px;
+}
+
+.girlsrock {
+  padding-left: 25px;
+  padding-right: 10px;
+  max-width: 80%;
+  transform: translateX(-5%);
+
+}
+
+/* .pic {
+  margin: -10px;
+  height: auto;
+} */
+
+.text {
+  color: rgba(255, 255, 255, 0.44);
+}
+
+.card-body {
+  background-color: #323534;
+  color: white;
+  margin-right: -5%;
+  margin-left: -10%;
+  transform: translateX(1%);
+}
+
+.time {
+  margin: 32px;
+}
+
+.card {
+  position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #323534;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-right: 12%;
+  margin-left: 14%;
+  text-align: justify;
+}
+
+
+h1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  /* opacity: .2; */
+  font-size: 70px;
+}
+
+h2 {
+
+  /* top: 47%;
+  left: 50%; */
+
+  color: #fff;
+  text-transform: uppercase;
+  /* opacity: .2; */
+  font-size: 20px;
+
+}
+
+
+
+.parallax2 {
+
+  background-image: url(/img/Photo+51+-RF.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#parallax {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png); */
+  background-image: url(/maravilhosas/helena-magaldi/img/microscope.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+}
+
+
+
+
+
+
+
+.mySlides {
+  align-content: center;
+  /* justify-content: center; */
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 50px;
+  transform: translateX(-4%)
+}
+
+
+#flipcards {
+  margin-bottom: 120px;
+}
+
+
+
+.videoplay {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.videoplay1 {
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 60px;
+  margin-left: 37px;
+  padding: 20px;
+}
+
+
+.videoplay2 {
+  width: 100%;
+  transform: translateX(2%);
+  transform: translatey(2%)
+}
+
 .phell {
   font-size: 10px;
 }
 
-html {
-  font-size: 10px;
+
+.pvideo {
+max-width: 100%;
+  margin-top: 20px;
+  text-align: justify;
 }
+
+.pvideo2 {
+  max-width: 100%;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+
+.sobre2 {
+  margin-top: 4rem;
+}
+
+/* html {
+  font-size: 10px;
+} */
 
 .img-circle {
   border-radius: 50%;
   margin-top: 4rem;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
+  /* width: -webkit-fill-available; */
+  margin-right: 0;
+}
+
+.img-circle2 {
+  border-radius: 50%;
+  margin-top: 4rem;
+  width: -webkit-fill-available;
 }
 
 .p1 {
   margin: 2rem;
-  font-size: 20px;
+  text-indent: 60px;
+  /* font-size: 20px; */
 }
 
 #content {
-  background-color: #542e85a2;
+  background-color: #3f3e3f38;
   font-size: 2rem;
   color: black;
+}
+
+.psurprise {
+  text-align: justify;
+  margin: 42px;
+  padding-top: 42px;
+  color: rgba(133, 130, 130, 0.522);
+  /*
+  padding-left: 50px;
+  padding-right: 50px; */
 }
 
 
@@ -40,7 +241,7 @@ html {
 
 .outros {
   align-content: center;
-  text-align: right;
+  text-align: left;
   padding: 2rem;
 }
 
@@ -76,11 +277,12 @@ html {
   /* border: 1px solid #f1f1f1; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-  position: relative;
+  position: -webkit-left;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -115,14 +317,14 @@ html {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: transparent;
-  color: black;
+  color: 494849ec;
 }
 
 
 /* Style the back side */
 .flip-card-back {
-  background-color: rgba(117, 75, 141, 0.534);;
-  color: black;
+  background-color: rgba(10, 10, 10, 0);;
+  color: #494849ec;
   transform: rotateY(180deg);
   font-size: 2rem;
 }
@@ -131,19 +333,6 @@ html {
   font-size: 7vw;
 }
 
-/*
-#e27d60
-#O85DCB
-#E8A87C
-#C38D93
-#41B3A3
-#badbe2
-#a8ced7
-#e4d0d3
-#e1d8d9
-#504f4f
-#215b53
- */
 
 .dna {
   width: 30vw;
@@ -153,6 +342,12 @@ html {
   width: 80%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  /* parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* /parallax */
 }
 
 .lala {
@@ -165,28 +360,33 @@ html {
   margin-bottom: 4rem;
   text-align: justify;
   font-style: italic;
+  color:  #494849ec;
+
 }
 
 .paragraph1 {
   text-align: justify;
+  color:  rgba(255, 255, 255, 0.44);
+  /* THIS COLOUR THIS THIS */
 
 }
 
 .media {
-  padding: 2rem;
-  margin: 2rem;
+
+  margin: 1rem;
   margin-bottom: 2rem;
   /* justify-content: center; */
-  display: block;
+  display: flex;
   justify-content: center;
 
 }
 
 .introducao {
-  padding: 0;
-  padding-left: 0;
+
   justify-content: center;
   display: block;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .button2 {
@@ -198,50 +398,47 @@ html {
 }
 
 .pictures {
-  justify-content: center;
+  flex-wrap: wrap;
+  display: flexbox;
+ transform: translateX();
 }
-
-/*
-#e27d60
-#O85DCB
-#E8A87C
-#C38D93
-#41B3A3
-#badbe2
-#a8ced7
-#e4d0d3
-#e1d8d9
-#47bfaf*/
 
 
 /* conteudo original do meu botao, a ser modificado depois para parecer algo  */
 .btncent {
-  background-color: #63458a;
+  background-color: transparent;
   border: none;
   color: white;
   padding: 2px;
-  text-align: center;
   text-decoration: none;
+  vertical-align: middle;
+  /* position: inherit; */
   /* display: inline-block; */
   font-size: 16px;
   color: #000;
   margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#resultList {
+  text-align: justify;
 }
 
 * {
   box-sizing: border-box;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
+  /* max-width: 100%; */
 }
 
 
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  margin: 0.5rem;
-  background-color: #bdbaba7b;
+  margin: 0;
+  /* background-color: #bdbaba7b; */
+  background-color: #080808f1;
   text-align: center;
-  font-size: 15px;
+  /* color: #494849ec; */
+  color: rgba(255, 255, 255, 0.44);
 }
 
 a {
@@ -249,33 +446,68 @@ a {
   color: inherit;
 }
 
+nav {
+  display: block;
+}
+
+
 .flip-card {
   align-self: center;
 }
 
+.card-header {
+  margin: 0;
+  padding: 0;
+}
+
+
 #videos {
   /* margin-top: 0rem; */
-  border: 50px solid #3c2954;
+  display: block;
+  background-color: #323534;
+  margin: 25px;
+  border-radius: 50px;
+  border: 7px double #6c548bc6;
+  margin-bottom: 60px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.44);
 }
 
 ul {
   padding: 0;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  /* padding-inline-start: 40px; */
+  padding: 20px;
 }
 
 li {
   list-style: none;
+  display: list-item;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 /* define que as imagens tem que ter o tamanho máximo da div mãe */
 .img-responsive {
-  width: 85%;
+  width: 100%;
 }
 
 /* define o tamanho da caixa */
 .container {
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
-  /* max-width: 960px; */
+  max-width: 960px;
 }
 
 /* --- BOTAO --- */
@@ -283,10 +515,10 @@ li {
 
 .btn2 {
         display: inline-block;
-        background-color: #582e8f;
+        background-color: grey;
         border-radius: 60px;
-        border: 7px double #cccccc;
-        color: #adadad;
+        /* border: 7px double #070707; */
+        color: #030303;
         text-align: center;
         font-size: 28px;
         padding: 20px;
@@ -299,7 +531,21 @@ li {
 
 .maisSobre {
   margin-bottom: 10vw;
+  align-content: center;
+
 }
+
+#resultList{
+  margin-bottom: 10vw;
+  align-content: center;
+  background-color: grey;
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 0 30px 40px rgba(0,0,0,.1);
+
+}
+
+
 
 .flip-card {
   margin: 2vw;
@@ -308,7 +554,7 @@ li {
 .btn3 {
   background-color: transparent;
   text-decoration: underline;
-  color: gainsboro
+  color: #6745826b;
 }
 
 .btn {
@@ -334,6 +580,33 @@ li {
   text-align: center;
   transition: all 0.5s;
   margin: 0 auto;
+}
+
+.btn_rosa {
+  color: white;
+  background-color: #7c527877;
+  display: block;
+  max-width: 250px;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 0 auto;
+  border-radius: 60px;
+  padding: 20px;
+  margin-bottom: 40px;
+
+}
+
+.btn_rosa2 {
+  color: white;
+  background-color: #7c527877;
+  display: block;
+  max-width: 250px;
+  text-align: center;
+  transition: all 0.5s;
+  margin: 0 auto;
+  border-radius: 60px;
+  padding: 20px;
+
 }
 
 .btn_roxo:hover,
@@ -363,8 +636,8 @@ li {
   padding: 1.5rem;
   z-index: 99;
   position: fixed;
-  width: 99%;
-  transition: all 3s;
+  width: 100%;
+  transition: all 1s;
 }
 
 .navegacao__logo {
@@ -446,12 +719,27 @@ li {
   padding: 11rem 2rem 5rem 2rem;
   color: white;
 }
+/* tentar depois:
+.header {
+  background-image: linear-gradient(to top, rgba(3, 3, 3, 0.781) 0, rgba(196, 61, 223, 0.418) 50%, #69156975 100%), url(../img/header.jpg);
+  background-position: center;
+  display: flex;
+  background-size: cover;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 2rem;
+  color: white;
+  height: 500px;
+} */
+
+
 
 .principal__titulo {
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 900;
   text-shadow: 0px 5px 15px black;
+  text-align: center;
 }
 
 /* .principal__sub {
@@ -461,45 +749,7 @@ li {
   text-shadow: 0px 0px 15px black;
 } */
 
-/* --- SECTION MARAVILHOSAS --- */
-.maravilhosas__titulo {
-  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
-  color: #63458a;
-  font-size: 2rem;
-  text-align: center;
-}
 
-.maravilhosas__box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
-  color: #63458a;
-}
-
-.maravilhosas__perfil {
-  max-width: 120px;
-  margin: 2rem;
-}
-
-.maravilhosas__perfil img {
-  background-color: #63458a;
-  border-radius: 10px;
-  min-height: 125px;
-  object-fit: cover;
-}
-
-.maravilhosas__perfil a img {
-  transition: all 0.5s;
-}
-
-.maravilhosas__perfil a:hover {
-  text-decoration: underline;
-}
-
-.maravilhosas__perfil a:hover img {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
 
 /* --- FOOTER --- */
 .rodape {
@@ -571,63 +821,7 @@ li {
   text-align: center;
 }
 
-/* --- PEFIL DIVA--- */
-.secao-diva {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 2rem;
-  margin: 0 auto;
-}
 
-.secao-diva__titulo {
-  text-align: center;
-  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  color: #674582;
-}
-
-.secao-diva__titulo_esq {
-  margin-right: auto;
-}
-
-.secao-diva p {
-  color: #63458a;
-  font-size: 1.6rem;
-  line-height: 0.5;
-}
-
-.secao-diva__introducao {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.secao-diva__foto-perfil {
-  max-width: 18rem;
-  margin: 1rem;
-}
-
-.secao-diva__citacao p {
-  transition: all 0.5s;
-  font-weight: bold;
-  border: 1px solid #63458a;
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.7rem;
-}
-
-.secao-diva__citacao p:hover {
-  transform: scale(1.1);
-}
-
-.secao-diva__historia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5rem 0;
-}
 
 /* --- AUTORA --- */
 .secao-autora {
@@ -637,108 +831,24 @@ li {
   align-items: center;
 }
 
-.secao-autora__container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  border-radius: 5px;
-}
 
-.arrow {
-  cursor: pointer;
-  width: 0;
-  height: 0;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #63458a;
-  transition: all 0.5s;
-}
-
-.arrow-close {
-  cursor: pointer;
-  transition: all 0.5s;
-  width: 0;
-  height: 0;
-  border-bottom: 10px solid #63458a;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid transparent;
-  margin-bottom: 25px;
-}
-
-.secao-autora__foto a:hover {
-  opacity: 0.8;
-}
-
-.secao-autora__dados {
-  color: #63458a;
-}
-
-.secao-autora__dados p {
-  margin: 15px;
-  display: inline-block;
-  font-size: 20px;
-}
-
-/* .secao-autora__dados span {
-  font-size: 5px;
-} */
-
-.secao-autora a {
-  font-style: italic;
-  text-decoration: underline;
-}
-.secao-autora__about {
-  background-color: rgb(248, 205, 248);
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-}
-.secao-autora__about img {
-  border-radius: 8px;
-  width: 75px;
-  height: 110px;
-  margin: 10px;
-}
-
-.secao-autora__about p {
-  line-height: 23px;
-  font-size: 15px;
-  margin-right: 10px;
-}
-
-.closed {
-  display: none;
-  transition: all 1s;
-}
-.opened {
-  display: flex;
-  transition: all 1s;
-}
-
-.secao-cta {
-  text-align: right;
-  padding: 4rem 4rem;
-}
-
-.secao-cta__btn {
-  padding: 10px 25px;
-  border-radius: 5px;
-  background-color: #674582;
-  color: white;
-  font-size: 20px;
-}
-
-.secao-cta__btn:hover {
-  opacity: 0.8;
-}
 /*** MEDIA QUERIES ***/
 /* TABLET */
 @media (min-width: 768px) {
   /* --- NAV --- */
+
+  .pictures {
+    flex-wrap: wrap;
+    align-content: center;
+    transform: translateX(10%);
+
+  }
+
+  .girlsrock {
+    transform: translateX(42%);
+    }
+
+
 
   p {
     font-size: 20px;
@@ -746,20 +856,25 @@ li {
 
   .p1 {
     font-size: 20px;
-
   }
 
   .paragraph2 {
     font-size: 15px;
   }
 
+  #flipcards {
+    align-content: center;
+    display: flex;
+  }
+
   body {
     font-size: 20px;
-
   }
 
   .media-video {
     max-width: 100%;
+    display: flex;
+    flex-direction: row;
   }
 
   .navegacao__itens {
@@ -786,6 +901,10 @@ li {
     margin: 0 0.6rem;
   }
 
+  .container {
+    max-width: 100%;
+  }
+
   .navegacao__menu-hamburguer {
     display: none;
   }
@@ -800,7 +919,8 @@ li {
   }
 
   .principal__titulo {
-    font-size: 2.9rem;
+    font-size: 5rem;
+    text-align: center;
   }
 
   .principal__sub {
@@ -811,23 +931,6 @@ li {
     margin: 0;
   }
 
-  /* --- SECTION MARAVILHOSAS --- */
-  .maravilhosas {
-    padding: 4rem 0;
-  }
-
-  .maravilhosas__box > div {
-    max-width: 200px;
-    margin: 5rem;
-  }
-
-  .maravilhosas__perfil img {
-    min-height: 220px;
-  }
-  .maravilhosas__perfil p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-  }
 
   /* --- FOOTER --- */
   .rodape {
@@ -861,7 +964,88 @@ li {
 } */
 
 
+
+
 @media (min-width: 1024px) {
+
+  #videos {
+    /* margin-top: 0rem; */
+    display: block;
+    background-color: rgba(255, 255, 255, 0.44);
+    border-radius: 60px;
+    border: 7px double #6c548b67;
+    margin-bottom: 144px;
+    padding: 0;
+}
+
+.pvideo {
+  transform: translateX(-9%);
+}
+/*
+.girlsrock {
+  transform: translateX(-10%);
+} */
+
+/* .pvideo2 {
+  text-align: justify;
+  margin-top: 20px;
+
+} */
+
+.img-circle {
+  transform: translateY(64%);
+}
+
+.carrosel {
+  display: flex;
+}
+
+h2 {
+
+  /* top: 47%;
+  left: 50%; */
+  transform: translate(10%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  opacity: .8;
+  font-size: 30px;
+  text-align: center;
+  align-content: center
+
+
+}
+
+.girlsrockatmath {
+    top: 15%;
+    left: 5%;
+
+}
+.fullnotebook {
+  padding: 20px;
+  width: 95%;
+  /* transform: translateX(8%) */
+
+}
+
+.fullnotebookall {
+  transform: translateX(8%)
+
+}
+
+.row {
+  flex-wrap: inherit;
+}
+
+/* .pictures {
+  flex-wrap: wrap;
+  align-content: center;
+} */
+
+
+.pcitation {
+  font-size: 28px;
+}
+
 
   .paragraph2 {
     display: flex;
@@ -872,6 +1056,43 @@ li {
   body {
     font-size: 20px;
   }
+
+  .p1 {
+    font-size: 22px;
+  }
+
+  .paragraph1 {
+    vertical-align: middle;
+
+  }
+.pictures {
+  transform: rotateX(-7%);
+}
+
+.girlsrock {
+  transform: translateX(-40%);
+
+}
+
+.microscopeflip {
+  transform: translateX((-20%)
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+@media (min-width: 768px) {
+
+body {
+    font-size: 20px;
+}
+
+
+  .introdiv {
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
 
   .principal {
     max-width: 650px;
@@ -902,7 +1123,7 @@ li {
   .secao-autora__dados {
     margin: 0 3rem;
   }
-}
+
 
 /* .media {
   padding: 2rem;
@@ -923,6 +1144,20 @@ li {
     font-size: 28px;
   }
 
+  h2 {
+
+    /* top: 47%;
+    left: 50%; */
+    transform: translate(42%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    /* opacity: .2; */
+    font-size: 30px;
+
+  }
+
+
+
   .navegacao__box {
     max-width: 80%;
   }
@@ -938,6 +1173,27 @@ li {
     max-width: 650px;
   }
 
+  .pictures {
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+  }
 
+  .flip-card-inner {
+    position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.5s;
+      transform-style: preserve-3d;
+  }
 
+  #flipcards {
+    align-content: flex-start;
+    align-items: flex-start;
+    transform: translateX(30%)
+}
+
+}
+}
 }

@@ -9,532 +9,576 @@ max-width: % ou px
 */
 
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 10px; /* definir uma font-size padrão */
-  }
-  
-  body {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    margin: 0;
-  }
+  box-sizing: border-box;
+}
 
-  main {
-    font-family: 'Special Elite', cursive;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  ul {
-    padding: 0;
-  }
-  
-  li {
-    list-style: none;
-  }
+html {
+  font-size: 10px; /* definir uma font-size padrão */
+}
 
-  footer {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  }
-  
-  /* define que as imagens tem que ter o tamanho máximo da div mãe */
-  .img-responsive {
-    width: 100%;
-  }
-  
-  /* define o tamanho da caixa */
-  .container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 960px;
-  }
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+main {
+  font-family: 'Special Elite', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+  width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
 
 /* --- NAV --- */
-  .navegacao {
-    background-color: #6745826b;
-    color: white;
-    text-transform: uppercase;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
-    padding: 1.5rem;
-    z-index: 99;
-    position: fixed;
-    width: 100%;
-    transition: all 1s;
-  }
-  
-  .navegacao__logo {
-    max-width: 200px;
-  }
-  
-  .navegacao__box {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
+.navegacao {
+  background-color: #6745826b;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, .2);
+  padding: 1.5rem;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  transition: all 1s;
+}
+
+.navegacao__logo {
+  max-width: 200px;
+}
+
+.navegacao__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegacao__itens {
+  transition: all 1s;
+  position: absolute;
+  right: -800px;
+  top: 85px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.navegacao__itens.ativo {
+  display: block;
+  right: 0;
+  top: 85px;
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+  transition: right 0.5s;
+  background-color: #6745826b;
+  background-blend-mode: multiply;
+}
+
+.navegacao__itens li > a {
+  transition: all 0.5s;
+}
+
+.navegacao__menu-hamburguer img {
+  border-radius: 5px;
+  margin-right: 2rem;
+}
+
+.navegacao__nav {
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+}
+
+.navegacao__nav li {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.navegacao__redes-sociais {
+  padding-top: 8px;
+}
+
+.navegacao__redes-sociais a {
+  margin: 0 1rem;
+}
+
+.navegacao__redes-sociais img {
+  width: 24px;
+}
+
+/* --- HEADER --- */
+.header {
+  min-height: 70vh;
+  height: 480px;
+  background: linear-gradient(to top, rgba(3, 3, 3, 0.4) 0,
+      rgba(196, 61, 223, 0.418) 100%,
+      black 90%),
+      url(../img/banner-familia.jpeg);
+  background-size: cover;
+  filter: contrast(90%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  padding: 11rem 2rem 5rem 2rem;
+  color: white;
+}
+
+.principal__titulo {
+  font-family: 'Special Elite', cursive;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 900;
+  text-shadow: 0px 5px 15px black;
+}
+
+/* --- SECTION MARAVILHOSAS --- */
+
+.section p {
+  color: #63458a;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  align-content: initial;
+  text-align: justify;
+  padding: 30px;
+}
+
+.zuzu2 {
+  border-radius:2%; 
+  width: 50%; 
+  height: 50%;
+  border-color: rgb(102, 0, 128);
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.maravilhosa__titulo {
+  font-family: 'Special Elite', cursive;
+  color: #63458a;
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+.maravilhosa__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  color: #63458a;
+}
+
+.roupas {
+  border-radius:2%; 
+  width: 50%; 
+  height: 50%;
+  border-color: rgb(102, 0, 128);
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  margin:30px 0px
+}
+
+.video-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.quotation {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.quotation p {
+  transition: all .5s;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #63458a;
+  max-width: 75%;
+}
+
+.quote-hidden{
+  opacity:0;
+}
+.quote-show {
+  opacity:1;
+  transition: all 1.5s;
+}
+
+ /* --- BOTOES --- */
+
+.principal__maravilhosas{
+  text-align: center;
+  padding: 4rem 4rem;
+}
+
+.btn__maravilhosas {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: white;
+  background-color: #C083B9;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.btn__maravilhosas:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 10px 10px rgba(0,0,0,.2);
+  background-color: rgb(192, 156, 188);
+  text-align: center;
+  transition: all .5s;
+  margin: 0 auto;
+  margin-top: 2rem;  
+}
+
+.secao__letra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letra__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.letraMusica {
+  color: #63458a;
+}
+
+.letraMusica p {
+  margin: 15px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.letraAngelica {
+  background-color: #C083B9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  color:white;
+}
+
+.letraAngelica p {
+  line-height: 23px;
+  font-size:15px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.closed {
+  display:none;
+  transition: all 1s;
+}
+
+.opened {
+  display: flex;
+  transition: all 1s;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 0; 
+  height: 0; 
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #63458a;
+  transition: all .5s;
+}
+
+.arrow-close {
+  cursor: pointer;
+  transition: all .5s;
+  width: 0; 
+  height: 0; 
+  border-bottom: 10px solid #63458a;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  margin-bottom: 25px;
+}
+
+.secao-sobremim p {
+  color: #63458a;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding: 1rem 0;
+}
+
+.sobre__mim {
+  color: #63458a;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.secao-sobremim{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 15px 24px;
+  margin-bottom: 32px;
+  width: 70%;
+  border: groove;
+}
+
+.btn_roxo_sobremim {
+  padding: 10px 25px;
+  border-radius: 5px;
+  color: white;
+  background-color: #C083B9;
+  font-size: 18px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.btn_roxo_sobremim:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 10px 10px rgba(0,0,0,.2);
+  background-color: rgb(192, 156, 188);
+  text-align: center;
+  transition: all .5s;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+
+/* --- FOOTER --- */
+.rodape {
+  background-color: #323534;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: .8rem;
+}
+
+.rodape__principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.rodape__principal > * {
+  margin: 1rem 0;
+}
+
+.rodape__navegacao > li {
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
+.rodape__navegacao a {
+  transition: all 0.5s;
+}
+
+.rodape__navegacao a:hover {
+  color: #c083b9;
+}
+
+.rodape__logo {
+  max-width: 200px;
+}
+
+.rodape__redes-sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+.rodape__redes-sociais a:hover {
+  color: #c083b9;
+}
+
+.rodape__redes-sociais img {
+  max-width: 10px;
+  margin-right: .5rem;
+}
+
+.rodape__redes-sociais span {
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.rodape__cc {
+  width: 100%;
+  background-color: #292a2a;
+  font-size: 1rem;
+  opacity: .5;
+  text-align: center;
+}
+
+/*** MEDIA QUERIES ***/
+/* TABLET */
+@media (min-width: 768px) {
+  /* --- NAV --- */
   .navegacao__itens {
-    transition: all 1s;
-    position: absolute;
-    right: -800px;
-    top: 85px;
-    width: 100%;
-    text-align: center;
-    padding: 3rem 0;
-  }
-  
-  .navegacao__itens.ativo {
-    display: block;
-    right: 0;
-    top: 85px;
-    width: 100%;
-    text-align: center;
-    padding: 3rem 0;
-    transition: right 0.5s;
-    background-color: #6745826b;
-    background-blend-mode: multiply;
-  }
-  
-  .navegacao__itens li > a {
-    transition: all 0.5s;
+    position: static;
+    display: flex;
+    padding: 0;
+    width: auto;
   }
 
-  .navegacao__menu-hamburguer img {
-    border-radius: 5px;
-  }
-  
   .navegacao__nav {
-    margin-bottom: 3rem;
-    margin-right: 2rem;
-  }
-  
-  .navegacao__nav li {
-    font-size: 1.5rem;
-    margin: 1rem;
+    margin-bottom: 0;
   }
 
-  .navegacao__redes-sociais {
-    padding-top: 8px;
-  }
-  
-  .navegacao__redes-sociais a {
-    margin: 0 1rem;
+  .navegacao__itens ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
 
-  .navegacao__redes-sociais img {
-    width: 24px;
+  .navegacao__itens li {
+    font-size: 1.2rem;
+    margin: 0 .6rem;
   }
-  
+
+  .navegacao__menu-hamburguer {
+    display: none;
+  }
+
   /* --- HEADER --- */
   .header {
-    min-height: 70vh;
-    height: 480px;
-    background: linear-gradient(to top, rgba(3, 3, 3, 0.4) 0,
-        rgba(196, 61, 223, 0.418) 100%,
-        black 90%),
-        url(../img/banner-familia.jpeg);
+    height: 75vh;
     background-size: cover;
-    filter: contrast(90%);
-    background-position-y: 5%;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-    padding: 11rem 2rem 5rem 2rem;
-    color: white;
+    background-position: center center;
+    text-align: left;
+    padding: 5rem 10rem;
+    
   }
-  
+
   .principal__titulo {
-    font-family: 'Special Elite', cursive;
-    text-transform: uppercase;
-    font-size: 2.7rem;
-    font-weight: 900;
-    text-shadow: 0px 5px 15px black;
-  }
-  
-  /* --- SECTION MARAVILHOSAS --- */
-
-  .zuzu2 {
-    border-radius:2%; 
-    width: 50%; 
-    height: 50%;
-    border-color: rgb(102, 0, 128);
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
+    font-size: 5.7rem;
+    text-align: center
   }
 
+  /* --- SECTION MARAVILHOSA --- */
+   
   .maravilhosa__titulo {
-    font-family: 'Special Elite', cursive;
-    color: #63458a;
     font-size: 3rem;
-    text-align: center;
   }
   
-  .maravilhosa__box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    color: #63458a;
-  }
-
-  .roupas {
-    border-radius:2%; 
-    width: 50%; 
-    height: 50%;
-    border-color: rgb(102, 0, 128);
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-
-  .video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    margin:30px 0px
-  }
-  
-  .video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-  }
-
-   /* --- BOTOES --- */
-
-  .principal__maravilhosas{
-    text-align: center;
-    padding: 4rem 4rem;
-  }
-
-  .btn__maravilhosas {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    padding: 10px 25px;
-    border-radius: 5px;
-    color: white;
-    background-color: #C083B9;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  .btn__maravilhosas:hover {
-    transform: translateY(-1rem);
-    box-shadow: 0 10px 10px rgba(0,0,0,.2);
-    background-color: rgb(192, 156, 188);
-    text-align: center;
-    transition: all .5s;
-    margin: 0 auto;
-    margin-top: 2rem;  
-  }
-
-  .secao-sobremim p {
-    color: #63458a;
+  .section p {
     font-size: 1.6rem;
-    line-height: 1.5;
-    padding: 1rem 0;
-  }
-
-  .sobre__mim {
-    color: #63458a;
-    font-size: 1.8rem;
-    text-align: center;
-  }
-  
-  .secao-sobremim{
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 15px 24px;
-    margin-bottom: 32px;
-    width: 70%;
-    border: groove;
-  }
-  
-  .btn_roxo_sobremim {
-    padding: 10px 25px;
-    border-radius: 5px;
-    color: white;
-    background-color: #C083B9;
-    font-size: 18px;
-    align-self: center;
-    cursor: pointer;
-  }
-  
-  .btn_roxo_sobremim:hover {
-    transform: translateY(-1rem);
-    box-shadow: 0 10px 10px rgba(0,0,0,.2);
-    background-color: rgb(192, 156, 188);
-    text-align: center;
-    transition: all .5s;
-    margin: 0 auto;
-    margin-top: 2rem;
   }
 
 
   /* --- FOOTER --- */
   .rodape {
-    background-color: #323534;
-    color: white;
-    font-size: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: .8rem;
+    padding-top: 0;
   }
-  
+
   .rodape__principal {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 1.5rem 0;
-  }
-  
-  .rodape__principal > * {
-    margin: 1rem 0;
-  }
-  
-  .rodape__navegacao > li {
-    font-size: 1.1rem;
-    margin: 1rem;
-  }
-  
-  .rodape__navegacao a {
-    transition: all 0.5s;
-  }
-  
-  .rodape__navegacao a:hover {
-    color: #c083b9;
-  }
-  
-  .rodape__logo {
-    max-width: 200px;
-  }
-  
-  .rodape__redes-sociais a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s;
-  }
-  
-  .rodape__redes-sociais a:hover {
-    color: #c083b9;
-  }
-  
-  .rodape__redes-sociais img {
-    max-width: 10px;
-    margin-right: .5rem;
-  }
-  
-  .rodape__redes-sociais span {
-    display: flex;
-    font-size: 1.5rem;
-  }
-  
-  .rodape__cc {
-    width: 100%;
-    background-color: #292a2a;
-    font-size: 1rem;
-    opacity: .5;
-    text-align: center;
-  }
-
-  /*** MEDIA QUERIES ***/
-  /* TABLET */
-  @media (min-width: 768px) {
-    /* --- NAV --- */
-    .navegacao__itens {
-      position: static;
-      display: flex;
-      padding: 0;
-      width: auto;
-    }
-  
-    .navegacao__nav {
-      margin-bottom: 0;
-    }
-  
-    .navegacao__itens ul {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .navegacao__itens li {
-      font-size: 1.2rem;
-      margin: 0 .6rem;
-    }
-  
-    .navegacao__menu-hamburguer {
-      display: none;
-    }
-  
-    /* --- HEADER --- */
-    .header {
-      min-height: 75vh;
-      background-size: cover;
-      background-position-y: 0;
-      text-align: left;
-      padding: 5rem 10rem;
-    }
-  
-    .principal__titulo {
-      font-size: 5.5rem;
-      text-align: center
-    }
-  
-    .principal__btn {
-      margin: 0;
-    }
-  
-    /* --- SECTION MARAVILHOSA --- */
-    .maravilhosa {
-      padding: 4rem 0;
-    }
-  
-    .maravilhosa__box > div {
-      max-width: 200px;
-      margin: 5rem;
-    }
-
-
-    /* --- FOOTER --- */
-    .rodape {
-      padding-top: 0;
-    }
-  
-    .rodape__principal {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .rodape__logo img {
-      max-width: 250px;
-    }
-  
-    .rodape__navegacao > li {
-      font-size: 1.5rem;
-    }
-
-    .rodape__cc {
-      font-size: 1.2rem;
-    }
-  }
-  
-  /* TABLET PAISAGEM OU LAPTOPS */
-  @media (min-width: 1024px) {
-    .principal {
-      max-width: 650px;
-    }
-    
-    .principal__titulo {
-      font-size: 3.5rem;
-    }
-  
-  /* DESKTOP */
-  @media (min-width: 1440px) {
-    .navegacao__box {
-        max-width: 80%;
-    }
-  
-    .header {
-        min-height: 90vh;
-        padding: 5rem 16rem;
-    }
-  
-    .navegacao__itens li {
-        font-size: 1.5rem;
-        margin: 0 1rem;
-    }
-  
-    .principal {
-        max-width: 750px;
-    }
-  
-    .principal__titulo {
-        font-size: 4rem;
-    }
-  
-    .container{
-        max-width: 1200px;
-    }
-  }
-  
-  .quotation {
-    text-align: center;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
   }
-  .quotation p {
-    transition: all .5s;
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    font-size: 3rem;
-    color: #63458a;
-    max-width: 75%;
-  }
-  
-  .quote-hidden{
-    opacity:0;
-  }
-  .quote-show {
-    opacity:1;
-    transition: all 1.5s;
-  }
-  
-  .img-greta {
+
+  .rodape__logo img {
     max-width: 250px;
   }
-  
-  .section {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem 2rem;
-    margin: 0 auto;
+
+  .rodape__navegacao > li {
+    font-size: 1.5rem;
   }
-  
+
+  .rodape__cc {
+    font-size: 1.2rem;
+  }
+}
+
+/* TABLET PAISAGEM OU LAPTOPS */
+@media (min-width: 1024px) {
+
+  .principal__titulo {
+    font-size: 6.5rem;
+  }
+
+  .maravilhosa__titulo {
+    font-size: 3.5rem;
+  }
+
   .section p {
-    color: #63458a;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    align-content: initial;
+    font-size: 2rem;
   }
-  
-  .slider-wrapper {
-    min-height: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-  
+}
+
+/* DESKTOP */
+@media (min-width: 1440px) {
+  .navegacao__box {
+      max-width: 80%;
   }
-  .slider {
-    width: 60%;
-    height: 400px;
-    box-sizing: border-box;
-    overflow: hidden;
+
+  .header {
+      min-height: 90vh;
+      padding: 5rem 16rem;
   }
-  
-   .slider img {
-      width: 110%;
-      height: 100%;
-      animation: ani 2s linear;
-      max-height: 300x;
+
+  .navegacao__itens li {
+      font-size: 1.5rem;
+      margin: 0 1rem;
   }
+
+  .principal__titulo {
+      font-size: 7rem;
+  }
+
+  .container{
+      max-width: 1200px;
+  }
+}
+
+

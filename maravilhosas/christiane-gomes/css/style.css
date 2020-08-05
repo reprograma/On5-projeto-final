@@ -15,6 +15,7 @@ max-width: % ou px
 
 html {
   font-size: 0.7rem;
+  /* definir uma font-size padrão */
 }
 
 body {
@@ -32,16 +33,7 @@ ul {
 }
 
 li {
-  list-style-type: disc;
-
-}
-
-iframe {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  height: 50%;
+  list-style: none;
 }
 
 /* define que as imagens tem que ter o tamanho máximo da div mãe */
@@ -54,44 +46,6 @@ iframe {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
-}
-
-/* --- BOTAO --- */
-
-.btn {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 1rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  margin-top: 9px;
-}
-
-.btn_roxo {
-  color: white;
-  background-color: #c083b9;
-  display: block;
-  max-width: 300px;
-  text-align: center;
-  transition: all 0.5s;
-  margin: 0 auto;
-  margin-top: 9px;
-}
-
-.btn_roxo:hover,
-.btn_roxo:focus {
-  transform: translateY(1rem);
-  box-shadow: 0 5px 5px rgb(231, 231, 7);
-  background-color: rgb(192, 156, 188);
-}
-
-.btn_roxo:active {
-  transform: translateY(-3rem);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.btn_center {
-  margin: 0 auto;
 }
 
 /* --- NAV --- */
@@ -146,7 +100,7 @@ iframe {
 }
 
 .navegacao__menu-hamburguer img {
-  padding-left: 9rem;
+  border-radius: 5px;
 }
 
 .navegacao__nav {
@@ -156,7 +110,6 @@ iframe {
 
 .navegacao__nav li {
   font-size: 1.5rem;
-  margin: 1rem;
 }
 
 .navegacao__redes-sociais a {
@@ -186,187 +139,18 @@ iframe {
 
 .principal__titulo {
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   font-weight: 900;
   text-shadow: 0px 5px 15px black;
 }
 
 .principal__sub {
-  font-weight: 300;
+  font-weight: 300px;
   margin: 2rem 0 3rem 0;
   font-size: 1.8rem;
   text-shadow: 0px 0px 15px black;
 }
 
-/* --- SECTION MARAVILHOSAS --- */
-.maravilhosas__titulo {
-  color: #63458a;
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 100px;
-  margin-top: 10px;
-}
-
-.maravilhosas__box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
-  color: #63458a;
-}
-
-.maravilhosas__perfil {
-  max-width: 120px;
-  margin: 2rem;
-}
-
-.maravilhosas__perfil img {
-  background-color: #63458a;
-  border-radius: 10px;
-  min-height: 125px;
-  object-fit: cover;
-}
-
-.maravilhosas__perfil a img {
-  transition: all 0.5s;
-}
-
-.maravilhosas__perfil a:hover {
-  text-decoration: underline;
-}
-
-.maravilhosas__perfil a:hover img {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* --- SURPRISE ELEMENT ---*/
-.img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 50%;
-
-}
-
-.element-surprise {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  visibility: hidden;
-  flex-wrap: wrap;
-}
-
-
-
-/* event toggle */
-.visible {
-  visibility: visible;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.1;
-    transform: translateY(-50px);
-    transform: rotate(-180deg)
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-    transform: rotate(360deg)
-  }
-
-}
-
-/* fim event toggle */
-
-.container {
-  display: flex;
-  justify-content: center;
-}
-
-.btn__autora {
-  outline: none;
-  box-shadow: none;
-  border: 2px solid #7E459B;
-  cursor: pointer;
-  font-size: .9rem;
-  font-weight: bold;
-  letter-spacing: 0.43px;
-  padding: 4px 15px;
-  text-transform: uppercase;
-  border-radius: 20px;
-  background-color: white;
-  text-align: center;
-  margin-bottom: 20px;
-  cursor: pointer;
-  width: 60%;
-  height: 3em;
-  margin-top: 30px;
-  color: purple;
-}
-
-.btn__autora:hover {
-  outline: none;
-  background-color: #7E459B;
-  color: white;
-}
-
-.card {
-  width: 90%;
-  margin-left: 2rem;
-}
-
-.fonte-titulo-card {
-  font-size: 20px;
-  color: purple;
-  text-align: center;
-  font-weight: bold;
-}
-
-.fonte-texto-card-footer {
-  font-size: 14px;
-  text-align: justify;
-}
-
-.imagem-card {
-  object-fit: cover;
-}
-
-.borda-card {
-  border-color: darkorange;
-  padding: 5px;
-}
-
-.btn-card {
-  outline: none;
-  box-shadow: none;
-  border: 2px solid #7E459B;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 0.43px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  border-radius: 20px;
-  background-color: white;
-  text-align: center;
-  margin-bottom: 20px;
-  color: purple;
-  margin-left: 130px;
-}
-
-.btn-card:hover {
-  outline: none;
-  background-color: #7E459B;
-  color: white;
-}
-
-.btn-card:link {
-  text-decoration: none;
-}
 
 /* --- FOOTER --- */
 .rodape {
@@ -395,7 +179,6 @@ iframe {
 .rodape__navegacao>li {
   font-size: 1.1rem;
   margin: 1rem;
-  list-style: none;
 }
 
 .rodape__navegacao a {
@@ -439,6 +222,28 @@ iframe {
   text-align: center;
 }
 
+/*---VÍDEOS---*/
+
+iframe {
+  width: 100%;
+  height: 50vh;
+}
+
+.segundo__video-marielle {
+  margin-top: 2rem;
+}
+
+h6 {
+  color: black;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
+  margin: 0.9rem;
+}
+
+.videos__marielle {
+  margin: 1rem;
+}
 
 /* --- PEFIL DIVA--- */
 .secao-diva {
@@ -450,85 +255,186 @@ iframe {
   margin: 0 auto;
 }
 
-.secao-diva__titulo h3 {
+.secao-diva__titulo h2 {
   text-align: center;
   font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   color: #674582;
-}
-
-.secao-diva__titulo_esq {
-  margin-right: auto;
-
+  font-weight: bold;
 }
 
 .secao-diva p {
   color: #63458a;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   line-height: 1.5;
-  text-align: justify;
 }
 
 .secao-diva__introducao {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: justify;
 }
 
-.secao-diva__foto-perfil {
-  max-width: 18rem;
-  margin: 1rem;
-}
-
-.secao-diva__citacao-titulo h3 {
+.secao-diva__citacao p {
   transition: all 0.5s;
   font-weight: bold;
   border: 1px solid #63458a;
   text-align: center;
   padding: 1rem;
-  font-size: 1.7rem;
-  margin-top: 5rem;
-  color: #674582;
+  font-size: 1.3rem;
 }
 
-.secao-diva__citacao-titulo p:hover {
+.secao-diva__citacao p:hover {
   transform: scale(1.1);
 }
 
-.secao-diva__citacao-projetos {
+h3 {
+  text-align: center;
+  color: #63458a;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.secao-diva__historia {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 5rem 0;
-  margin: 3rem;
+  font-size: 1.3rem;
+}
+
+.itens__projetos li {
+  list-style-type: disc;
   text-align: justify;
-  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  color: #674582;
+  color: #63458a;
+  font-size: 1.1rem;
+  margin: 2rem 3rem;
 }
 
 .ver-mais__btn {
+  font-size: 1.1rem;
+  color: purple;
+  font-weight: bold;
+}
+
+.ver-mais__btn:link,
+.ver-mais__btn:hover,
+.ver-mais__btn a {
+  text-decoration: none;
   color: purple;
 }
 
-.ver-mais__btn:link {
+/* --- CARD --- */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+}
+
+.borda-card {
+  margin: 50px;
+  border-color: gold;
+  border-style: double;
+  border-width: 10px;
+}
+
+.btn-card {
+  display: flex;
+  justify-content: center;
+  background-color: purple;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  width: 30%;
+}
+
+.btn-card:link,
+.btn-card:hover,
+.btn-card a {
   text-decoration: none;
+  color: white;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: purple;
+  align-items: center;
+}
+
+.card-body p {
+  color: #63458a;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: justify;
 }
 
 /* --- AUTORA --- */
-.secao-autora {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+
+/* event toggle */
+.secao-autora img {
+  border-radius: 50%;
+  max-width: 70px;
+  max-height: 90px;
+  margin-left: 100px;
 }
+
+.secao-autora p {
+  background-color: rgb(223, 154, 223);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.secao-autora h4 {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.surprise {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  visibility: hidden;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+
+.visible {
+  visibility: visible;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+    transform: translateY(-50px);
+    transform: rotate(-180deg)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    transform: rotate(360deg)
+  }
+
+}
+
+/* fim event toggle */
+
 
 .secao-autora__container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 400px;
-  border-radius: 5px;
+  width: 100%;
+  border-radius: 60px;
 }
 
 .arrow {
@@ -554,47 +460,8 @@ iframe {
   margin-bottom: 25px;
 }
 
-.secao-autora__foto {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-left: 150px;
-}
-
-.secao-autora__foto a:hover {
+.secao-autora img:hover {
   opacity: 0.8;
-}
-
-h6 {
-  margin-left: 140px;
-  margin-top: 5px;
-}
-
-.nome-autora {
-  font-weight: bold;
-}
-
-.secao-autora__container {
-  margin: 15px;
-  display: inline-block;
-  font-size: 10px;
-  color: #63458a;
-}
-
-
-.secao-autora a {
-  font-style: italic;
-  text-decoration: underline;
-}
-
-.secao-autora__about p {
-  background-color: rgb(248, 205, 248);
-  border-radius: 8px;
-  width: 290px;
-  font-size: 10px;
-  text-align: center;
-  margin-top: -10px;
 }
 
 .closed {
@@ -607,20 +474,15 @@ h6 {
   transition: all 1s;
 }
 
-.secao-cta {
-  text-align: right;
-  padding: 4rem 4rem;
-}
-
-.secao-cta__btn {
-  padding: 10px 25px;
-  border-radius: 5px;
+.secao-autora__btn {
+  padding: 10px 15px;
+  border-radius: 9px;
   background-color: #674582;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 
-.secao-cta__btn:hover {
+.secao-autora__btn:hover {
   opacity: 0.8;
 }
 
@@ -640,27 +502,13 @@ h6 {
     margin-bottom: 0;
   }
 
-  .navegacao__itens ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
   .navegacao__itens li {
-    font-size: 1.2rem;
-    margin: 0 0.6rem;
-    list-style: none;
+    font-size: 1.3rem;
+
   }
 
   .navegacao__menu-hamburguer {
     display: none;
-  }
-
-  .navegacao__redes-sociais {
-    width: 100%;
-    height: 100%;
   }
 
   /* --- HEADER --- */
@@ -682,8 +530,6 @@ h6 {
 
   .principal__btn {
     margin: 0;
-    padding: 15px 25px;
-    margin-left: 25px;
   }
 
   /* --- SECTION MARAVILHOSAS --- */
@@ -705,30 +551,19 @@ h6 {
     margin-top: 1rem;
   }
 
-  /*--- CARD ---*/
-  .card {
-    width: 50%;
-    padding: unset;
-    margin-left: 190px;
-  }
 
-  .borda-card {
-    padding: unset;
-    margin-left: 190px;
-  }
-
-  .secao-autora__about p {
-    border-radius: 8px;
-    width: 90%;
-    font-size: 10px;
-    margin-right: 100px;
-  }
-
-  /*--- VÍDEO ---*/
+  /*---VÍDEOS---*/
 
   iframe {
-    height: 90%;
+    height: 100vh;
   }
+
+  /* --- CARD --- */
+
+  .card {
+    width: 40%;
+  }
+
 
   /* --- FOOTER --- */
   .rodape {
@@ -749,165 +584,198 @@ h6 {
   .rodape__navegacao>li {
     font-size: 1.5rem;
   }
+
+  .itens__projetos li {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
-  .principal {
-    max-width: 650px;
-  }
 
-  .secao-diva__introducao {
-    flex-direction: row;
-    margin: 3rem 0;
-  }
+    .header {
+      width: 100%;
+      min-height: 100vh;
+    }
+    .principal {
+      max-width: 650px;
+    }
 
-  .secao-diva__foto-perfil {
-    max-width: 100%;
-    margin: 0 4rem;
-  }
+    .principal__titulo {
+      font-size: 3rem;
+    }
 
-  .secao-diva p {
-    font-size: 1.7rem;
-  }
+    .secao-diva__titulo h2 {
+      font-size: 2.7rem;
+    }
 
-  .secao-diva__citacao p {
-    font-size: 2.5rem;
-    padding: 4rem;
-  }
 
-  .secao-autora__about p {
-    width: 500px;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin-left: 120px;
-  }
+    .secao-diva__introducao p {
+      flex-direction: row;
+      margin: 3rem 0;
+      font-size: 1.7rem;
+      padding: 2rem;
+    }
 
-  /*--- CARD ---*/
+    .secao-diva__foto-perfil {
+      max-width: 100%;
+      margin: 0 4rem;
+    }
 
-  .card {
-    width: 65%;
-  }
 
-  .borda-card {
-    padding: 10px;
-  }
+    .secao-diva__citacao p {
+      font-size: 1.4rem;
+    }
 
-  .btn-card {
-    margin-left: 250px;
-  }
+    /* --- CARD --- */
+
+    .card {
+      width: 40%;
+      padding: 1.5rem;
+
+    }
+
+    .btn-card {
+      font-size: 1.4rem;
+      width: 30%;
+    }
+
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    .card-body p {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 3rem;
+    }
+
+    .itens__projetos li {
+      font-size: 1.7rem;
+    }
+
+    iframe {
+      width: 80%;
+      height: 80vh;
+    }
+
+    h6 {
+      font-size: 1.0rem;
+    }
+
+    .videos__marielle {
+      border: none;
+      width: 80%;
+      margin: 0 20rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    .itens__projetos li {
+      font-size: 1.5rem;
+    }
+
+    .ver-mais__btn {
+      font-size: 1.5rem;
+    }
+
+    .secao-autora__btn {
+      font-size: 1.5rem;
+    }
+
+    .secao-autora p {
+      font-size: 1rem;
+    }
+
+    .secao-autora h4 {
+      font-size: 1.5rem;
+    }
+    .secao-autora img {
+      max-width: 100px;
+      max-height: 150px;
+    }
 }
 
-/* DESKTOP */
+
+
+  /* DESKTOP */
 @media (min-width: 1440px) {
-  .navegacao__itens {
-    padding: 30px 85px;
+    .navegacao__box {
+      max-width: 80%;
+    }
 
-    width: 100%;
+    .header {
+      min-height: 90vh;
+      background-position-y: 25%;
+    }
+
+    .navegacao__itens li {
+      font-size: 2rem;
+      margin: 0 1rem;
+    }
+
+    .principal {
+      max-width: 650px;
+    }
+
+    .principal__titulo {
+      font-size: 6rem;
+    }
+
+    .secao-diva__titulo h2 {
+      font-size: 5rem;
+    }
+
+    .secao-diva p {
+      font-size: 1rem;
+    }
+
+    iframe {
+      height: 90vh;
+    }
+
+    h6 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 4rem;
+    }
+    .itens__projetos li {
+      font-size: 2rem;
+    }
+
+    .ver-mais__btn {
+      font-size: 2.5rem;
+    }
+
+    h5 {
+      font-size: 3rem;
+    }
+
+    .card-body p{
+      font-size: 2.5rem;
+    }
+
+    .btn-card {
+      font-size: 2rem;
+    }
+
+    .navegacao__logo {
+      max-width: 400px;
+    }
+    .rodape,
+    .rodape__principal,
+    .rodape__navegacao li a{
+      font-size: 2rem;
+    }
+
+    .rodape__cc p {
+      font-size: 2rem;
+    }
+
+
   }
-
-  .navegacao__box {
-    max-width: 80%;
-  }
-
-  .header {
-    min-height: 90vh;
-    background-position-y: 25%;
-  }
-
-  .navegacao__itens li {
-    font-size: 1.5rem;
-    margin: 0 1rem;
-  }
-
-  .principal {
-    justify-content: center;
-
-  }
-
-  .principal__titulo {
-    font-size: 4.0rem;
-  }
-
-  .btn_roxo {
-    font-size: 1.5rem;
-    margin-left: 100px;
-  }
-
-  .secao-diva__titulo h3 {
-    font-size: 4rem;
-  }
-
-  .secao-diva p {
-    font-size: 2.0rem;
-  }
-
-  .secao-diva__citacao-titulo h3 {
-    font-size: 2.7rem;
-  }
-
-  .secao-diva__citacao-titulo p:hover {
-    transform: scale(1.1);
-  }
-
-  .secao-diva__citacao-projetos {
-    font-size: 2.0rem;
-  }
-
-  /*--- CARD ---*/
-
-  .card {
-    width: 75%;
-  }
-
-  .borda-card {
-    padding: 30px;
-  }
-
-  .btn-card {
-    margin-left: 400px;
-    font-size: 20px;
-  }
-
-  .fonte-titulo-card {
-    font-size: 30px;
-  }
-
-  .fonte-texto-card-footer {
-    font-size: 24px;
-  }
-
-  /*--- AUTORA ---*/
-
-  .secao-autora__foto {
-    width: 150px;
-    height: 150px;
-    margin-left: -20px;
-  }
-
-  .btn__autora {
-    font-size: 22px;
-  }
-
-  .secao-autora__about p {
-    font-size: 1.3rem;
-    margin-top: 30px;
-  }
-
-  .nome-autora {
-    font-size: 1.5rem;
-  }
-
-  h6 {
-    margin-left: 0;
-    margin-top: 0;
-  }
-
-  .secao-autora__container {
-    display: flex;
-    width: 100%;
-    margin: 0;
-  }
-}

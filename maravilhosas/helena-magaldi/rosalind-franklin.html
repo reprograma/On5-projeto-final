@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     #myDIV {
       width: 100%;
@@ -129,7 +130,7 @@ img {vertical-align: middle;}
             href="https://www.linkedin.com/company/reprogramabr/"
             target="_blank">
           </a>
-            <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn" />
+            <img src="img/icon-linkedin.png" alt="Ícone do LinkedIn"/>
           </a>
         </div>
       </div>
@@ -158,15 +159,17 @@ img {vertical-align: middle;}
   <main id="main" class="main">
     <section>
 
-      <div class="container introducao">
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="./img/microscope.jpg"
-            class="img-circle" alt="Responsive Image"
-            width="307" height="240" />
+      <div class="row introducao">
+        <div class="row introdiv">
+          <div class="col-lg-6 pic">
+            <a href="#" class="Anchor-1">
+              <img class="img-circle" src="img/microscope2.jpeg">
+            </a>
+
+
           </div>
-          <div class="col-lg-8 paragraph1">
-            <h3 align="center"><strong>Rosalind Franklin</strong></h3>
+          <div class="col-lg-6 paragraph1">
+            <h3 align="center"><strong>Rosalind Elsie Franklin</strong></h3>
             <p class="p1">Rosalind Franklin foi uma cientista britânica que atuou diretamente na descoberta da estrutura do DNA humano como o conhecemos hoje, com formato helicoidal. Seu trabalho com difração de raios-X ficou conhecido na comunidade científica da época, porém, o reconhecimento de seu papel imperativo na descrição da molécula de DNA foi impedido por colegas da Universidade de Cambridge. Seus dados foram usados sem a sua permissão no renomado estudo que descreve o modelo da molécula, publicado em 1953 por Francis Crick, James Watson e Maurice Wilkins. Os três homens viriam a ganhar o Prêmio Nobel de Medicina em 1963, ainda ignorando as contribuições de Franklin.</p>
           </div>
       </div>
@@ -174,100 +177,111 @@ img {vertical-align: middle;}
 
     </div>
 
-        <!-- <div class="introducao">
-          <div class="row">
-          <div class="col-sm-12">
-            <img src="./img/microscope2.jpeg" class="align-self-center mr-3" alt="Rosalind and her microscope">
-          <div class="col-sm-12 paragraph1">
-            <h5><strong>Rosalind Elsie Franklin</strong></h5>
-            <p>Rosalind Franklin foi uma cientista britânica, que recebeu seu PhD pela Universidade de Cambridge em 1945 e atuou diretamente na descoberta da estrutura do DNA humano como o conhecemos hoje, com formato helicoidal. Seu trabalho com difração de raios-X ficou conhecido na comunidade científica da época, porém, o reconhecimento de seu papel imperativo na descrição do DNA foi impedido pelo seu colega de laboratório Cambridge, o biólogo molecular Maurice Wilkins, em 1950. Seus dados foram usados, sem a sua permissão, pelo renomado estudo que descreve o modelo da molécula, publicado em 1953 por Francis Crick, James Wation e Wilkins. Os três homens viriam a ganhar o Prêmio Nobel de Medicina em 1963 pelo seu trabalho científico ignorando as contribuições de Franklin.</p>
-          </div>
-        </div>
-        </div>
-      </div> -->
+    <div class="container-fluid">
+      <div class="parallax2"></div>
 
-      <div class="container-fluid">
-        <img src="./img/Photo+51+-RF.jpg" class="align-self-center dna" alt="photo 51">
-        <p class="paragraph2">Foto 51, a foto realizada com difração de raios-X que permitiu a Franklin descrever a estrutura helicoidal do DNA e que posteriormente seria usada por Watson, Crick e Wilkins em seu estudo. Ao lado direito podemos ver a assinatura de Franklin, além de alguns comentários. No meio científico, a "Foto 51" é considerada por muitos a foto mais importante da história. Para a sua captura, uma amostra de DNA hidratado foi posicionada sobre uma fonte de raios-X e demorou mais de 60 horas para ser finalizada. Os raios difratados pela molécula de DNA produzem uma imagem que permitem a determinação da sua estrutura em 3D por meio da forma de "cruz listrada" obtida.</p>
-        </div>
+<div class="paragraph2 style="height:1000px;background-color:red;font-size:36px">
+  Foto 51, a foto realizada com difração de raios-X que permitiu a Franklin descrever a estrutura helicoidal do DNA e que posteriormente seria usada por Watson, Crick e Wilkins em seu estudo. Ao lado direito podemos ver a assinatura de Franklin, além de alguns comentários. No meio científico, a "Foto 51" é considerada por muitos a foto mais importante da história. Para a sua captura, uma amostra de DNA hidratado foi posicionada sobre uma fonte de raios-X e demorou mais de 60 horas para ser finalizada. Os raios difratados pela molécula de DNA produzem uma imagem que permitem a determinação da sua estrutura em 3D por meio da forma de "cruz listrada" obtida.
+</div>
+      </div>
+
+<div class="container-fluid">
+      <div class="parallax2"></div>
 
 
-    <div id="result" class="result"></div>
+
+
+      <div class="explanationotebook">
+        <button id="buttonNT" class="btn_rosa btn-light" value="" onclick="addRow2()">Interpretando: Foto 51</button>
+        <div id="explanationotebook">
+       </div>
+
+
+      <div id="result" class="result"></div>
       <ul id="resultList"></ul>
     <div class="maisSobre">
-          <button id="button" class="btn2 align-self-center btn_centenario">Gostaria de saber mais sobre Franklin?</button>
+          <button id="button" class="btn_rosa2 align-self-center btn_centenario">Mais informações sobre Franklin</button>
          </div>
        </div>
-</section>
+
+    </section>
 
 
-<!-- <div class="container-fluid media">
-          <div class="row">
-          <div class="col-12">
-            <img src="./img/microscope2.jpeg" class="align-self-center mr-3" alt="Rosalind and her microscope">
-          <div class="col-12">
-            <h5><strong>Rosalind Elsie Franklin</strong></h5>
-            <p style="font-size:3vw">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-          </div>
-        </div>
-        </div>
-      </div>
- -->
-<!--
- <div class="container-fluid media">
-  <div class="row">
-  <div class="col-12">
-    <img src="./img/microscope2.jpeg" class="align-self-center mr-3" alt="Rosalind and her microscope">
-  <div class="col-12"> -->
+<section id="easteregg1" margin="2x"></section>
 
 
 <section id="videos">
   <div class="row">
-    <ul class="list-unstyled">
-      <div class="media-video col-sm-12">
-        <iframe src="https://www.youtube.com/embed/BIP0lYrdirI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="media-body">
-          <h4 class="mt-0 mb-1"><strong>TED:Ed - Rosalind Franklin</strong></h4>
+      <div class="row media">
+        <div class="col-lg-4 videoplay1">
+          <iframe src="https://www.youtube.com/embed/BIP0lYrdirI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-8 pvideo">
+          <h4><strong>TED:Ed - Rosalind Franklin</strong></h4>
           Esse vídeo explica, por meio de animações, parte de sua trajetória e a sua contribuição chave de Rosalind na descrição da molécula de DNA. Da mesma maneira, ele aborda o assédio de gênero sofrido pela cientista em seu ambiente de trabalho e de como a sua realidade afetou a sua carreira como cientista. (EN)
         </div>
       </div>
-      <div class="media-video col-sm-12">
+  </div>
+      <div class="clear swmsc_gap" style="margin:35px 0 0 0; border-top: 1px solid #605f5ffc; margin-bottom:35px;"></div>
+      <div class="row media">
+      <div class="col-lg-4 videoplay">
         <iframe src="https://www.youtube.com/embed/zwibgNGe4aY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="media-body">
-          <h4 class="mt-0 mb-1"><strong>DNA?</strong></h4>
-          Uma sigla relativamente conhecida no mundo, a molécula de DNA (DNA - Desoxirribonucleic Acid, ou ADN - Ácido Desoxirribonucléico) pode parecer um mistério para muitos. Esse vídeo explica a sua importância e demonstra com simplicidade a sua função em organismos vivos. (EN)
+      </div>
+        <div class="col-lg-8 pvideo2">
+          <h4><strong>DNA?</strong></h4>
+          Uma sigla relativamente conhecida no mundo, a molécula de DNA (DNA - Desoxirribonucleic Acid ou ADN - Ácido Desoxirribonucléico) pode parecer um mistério para muitos. Esse vídeo explica a sua importância e demonstra com simplicidade a sua função em organismos vivos. (EN)
         </div>
       </div>
-      <div class="media-video col-sm-12">
+    </div>
+    <div class="clear swmsc_gap" style="margin:35px 0 0 0; border-top: 1px solid #605f5ffc; margin-bottom:35px;"></div>
+      <div class="row media">
+        <div class="col-lg-4 videoplay">
         <iframe src="https://www.youtube.com/embed/-hryHoTIHak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="media-body col-12">
+        </div>
+        <div class="col-lg-8 pvideo2">
           <h4><strong>Projeto Genoma Humano</strong></h4>
           Esse incrível trabalho científico envolveu um time internacional de pesquisadores com o objetivo de sequenciar e mapear todos os genes (por sua vez, constituídos de DNA) de nossa espécie. Iniciado em 1990 e apenas completo em 2003, o resultado gerado permitiu, pela primeira vez, a leitura completa do mapa genético utilizado pela natureza para a geração de um ser humano. (EN)
         </div>
       </div>
-    </ul>
   </div>
   </section>
 
 
 </section>
-<section>
+<section id="flipcards">
   <div class="row pictures">
-    <div class="flip-card"">
-      <div class="flip-card-inner col-sm-12">
+    <!-- <div class="flip-card"> -->
+      <!-- <div class="flip-card-inner col-sm-12">
         <div class="flip-card-front">
-          <img src="./img/download.jpeg" alt="notebook" style="height:197px">
+          <img class="explanationotebook" src="./img/photo51explained22.svg" alt="3 of them" style="height:197px" width="300px">
+        </div> -->
+
+
+    <!-- <div class="flip-card"">
+      <div class="flip-card-inner col-sm-12 fullnotebookall">
+        <div class="flip-card-front">
+          <img class="fullnotebook" src="./img/fullnotebook22.jpg" alt="notebook" style="height:197px">
         </div>
         <div class="flip-card-back">
-          <p>Ata de laboratório de Franklin contendo suas anotações sobre a dupla hélice observada em sua fotografia.</p>
+          <p>Ata de laboratório de Franklin contendo suas anotações sobre a dupla hélice observada em sua fotografia</p>
 
+        </div>
+      </div>
+    </div> -->
+    <div class="flip-card">
+      <div class="flip-card-inner col-sm-12">
+        <div class="flip-card-front">
+          <img class="microscopeflip" src="./img/microscope2.jpeg" alt="3 of them" style="height:197px" align>
+        </div>
+        <div class="flip-card-back">
+          <p>Franklin trabalhando em seu microscópio</p>
         </div>
       </div>
     </div>
       <div class="flip-card">
         <div class="flip-card-inner col-sm-12">
           <div class="flip-card-front">
-            <img src="./img/798f244671e6a3adf4ab2daef14bcfe3b9f52d82.jpg" alt="3 of them" style="height:197px" align>
+            <img class="wcr" src="./img/798f244671e6a3adf4ab2daef14bcfe3b9f52d82.jpg" alt="3 of them" style="height:197px" align>
           </div>
           <div class="flip-card-back">
             <p>Watson, Crick e Franklin</p>
@@ -276,33 +290,20 @@ img {vertical-align: middle;}
       </div>
       <div class="flip-card">
         <div class="flip-card-inner col-sm-12">
-          <div class="flip-card-front">
-            <img src="./img/how_it_works.png" alt="girls are not bad at math" style="width:100%"">
+          <div class="flip-card-front girlsrockatmath">
+            <img class="girlsrock" src="./img/how_it_works.png" alt="girls are not bad at math" style="">
           </div>
           <div class="flip-card-back">
-            <!-- <h1 class="cardh1">John Doe</h1>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p> -->
             <p>A história de Franklyn não se trata de um caso isolado. Diversas mulheres foram apagadas pela história ao longo do desenvolvimento científico.</p>
-          <a href="https://www.nationalgeographic.com/news/2013/5/130519-women-scientists-overlooked-dna-history-science/" class="btn3 btn-primary"><strong>Outros casos</strong></a>
+            <a href="https://www.nationalgeographic.com/news/2013/5/130519-women-scientists-overlooked-dna-history-science/" class="btn3 btn-primary"><strong>Outros casos</strong></a>
           </div>
         </div>
       </div>
-    <!-- <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="./img/798f244671e6a3adf4ab2daef14bcfe3b9f52d82.jpg" alt="3 of them" style="height:197px" align>
-        </div>
-        <div class="flip-card-back">
-          <h1>Sexismo na Ciência
-          </h1>
-          <p>A história de Franklyn não se trata de um caso isolado. Diversas mulheres foram apagadas pela história ao longo do desenvolvimento científico.</p>
-          <a href="https://www.nationalgeographic.com/news/2013/5/130519-women-scientists-overlooked-dna-history-science/" class="btn btn-primary">Outros casos</a>
-        </div>
-      </div> -->
-    </div>
 
     </div>
+
+  </div>
+</section>
 
 
     <div class="card">
@@ -310,13 +311,14 @@ img {vertical-align: middle;}
               </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
-          <p>"You look at science (or at least talk of it) as some sort of demoralising invention of man, something apart from real life, and which must be cautiously guarded and kept separate from everyday existence. But science and everyday life cannot and should not be separated."</p>
+          <p class="pcitation">"You look at science (or at least talk of it) as some sort of demoralising invention of man, something apart from real life, and which must be cautiously guarded and kept separate from everyday existence. But science and everyday life cannot and should not be separated."</p>
           <footer class="blockquote-footer">Rosalind Franklin<cite title="Source Title"></cite></footer>
         </blockquote>
       </div>
     </div>
 
-    <div class="slideshow-container">
+<section id="carrosel">
+    <div id="wrap" lass="slideshow-container col-lg-8">
       <div class="mySlides fade">
         <div class="numbertext1"></div>
         <img src="./img/franklinLAB.jpeg" style="width:75%">
@@ -343,24 +345,10 @@ img {vertical-align: middle;}
       <span class="dot"></span>
       <span class="dot"></span>
     </div>
+
 </section>
+
 <section>
-
-
-<!-- <div class="container">
-          <div class="row">
-                  <div class="col-6">
-                      <img src="./img/rsz_img_3475_copy.jpg" class="foto-autora">
-                  </div>
-                  <div class="col-6"> <!--só para centralizar no container
-                    <h3 class="subtitulos-h3 lala">Sobre a autora</h3>
-                    <p> <a><strong>Helena Magaldi</strong></a> teve a sua formação em microbiologia, mas apaixonou-se por programação e fez parte da 5a turma online da { reprograma }.
-                    </p>
-
-                  </div>
-
-              </div>
-  </div> -->
   <div class="container">
     <div class="col-sm-12 justify-content-center outros">
         <div class="botao-classe">
@@ -381,16 +369,16 @@ img {vertical-align: middle;}
 </section>
 
 
-<section class="secao autora">
+<section class="secao-autora">
 
 
   <div class="container">
           <div class="row">
                   <div class="col-6">
-                      <img src="./img/rsz_img_3475_copy.jpg" class="foto-autora">
+                      <img src="./img/rsz_hell.jpg" class="foto-autora">
                   </div>
                   <!-- <div class="col-2"></div> só para centralizar no container -->
-                  <div class="col-6"> <!--só para centralizar no container-->
+                  <div class="col-6 sobre2"> <!--só para centralizar no container-->
                     <h5 class="subtitulos-h3 lala"
                     ><strong>Sobre a autora</strong></h5>
                     <p class="phell"><strong>Helena Magaldi</strong> tem formação acadêmica em Microbiologia, mas apaixonou-se por programação e fez parte da 5a turma online da {reprograma}.
@@ -406,17 +394,17 @@ img {vertical-align: middle;}
             <div class="row justify-content-center m-1" id="footer-redes">
                 <div class="m-3 fab fa-linkedin"><i></i>
                     <a href="http://www.linkedin.com/in/helenamagaldi/" target="_blank">
-                    <img src="./img/linkedin.svg" alt="ícone linkedin">
+                    <img src="./img/linkedin.png" alt="ícone linkedin">
                     </a>
                 </div>
                 <div class="m-3 fab fa-twitter"><i></i>
                     <a href="https://twitter.com/helenamagaldi" target="_blank">
-                      <img src="./img/twitter.svg" alt="ícone twitter">
+                      <img src="./img/twitter.png" alt="ícone twitter">
                     </a>
                 </div>
                 <div class="m-3 fab fa-github"><i></i>
                     <a href="https://github.com/helenamagaldi" target="_blank">
-                      <img src="./img/github.svg" alt="ícone github">
+                      <img src="./img/github.png" alt="ícone github">
                     </a>
                 </div>
             <!-- </div> -->
@@ -433,7 +421,7 @@ img {vertical-align: middle;}
         </div> -->
 
 <!-- Ícones feitos por <a href="https://creativemarket.com/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a> -->
-        <img src="img/dna (2).png" alt="Menu de navegação" type="button" class="btncent" value="" onclick="addRow()">
+        <img src="img/explore.png" alt="Menu de navegação" type="button" class="btncent" value="" onclick="addRow()">
 
         <div id="content">
         </div>
